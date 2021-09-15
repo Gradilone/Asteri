@@ -11,7 +11,7 @@ public class scrControladorDialogo : MonoBehaviour
     public string nome;
     public bool dialogoAtivo;
 
-    public string[] dialogoLinhas; 
+    public string[] dialogoLinhas;  
     public int linhaAtual = 0;
 
     public float veloDigitacao;

@@ -20,7 +20,7 @@ public class scrInteracao : MonoBehaviour
 
     private void Update() 
     {
-        if (emContato && Input.GetKeyDown(KeyCode.E))
+        if (emContato && Input.GetKeyDown(KeyCode.E)) 
         {
             //txtDialogo.MostrarBox(dialogo); 
 
