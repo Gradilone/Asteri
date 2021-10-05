@@ -36,7 +36,7 @@ public class scrControladorDialogo : MonoBehaviour
             bntContinuar.SetActive(true);
         if (dialogoAtivo && Input.GetKeyDown(KeyCode.Space))
         {
-            ProxDialogo(); 
+            ProxDialogo();  
         }  
         }
 

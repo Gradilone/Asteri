@@ -8,17 +8,18 @@ public class scrMovimentoTest : MonoBehaviour
     private Rigidbody2D myRigidBody;
     private Vector2 ultimoMov;
     public bool MovPlayer;
-    public bool movVertical;
-
+    public bool movVertical; 
     public bool podeMover;
+
+    public VectorValor comecaPosicao;
 
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         podeMover = true;
+        //transform.position = comecaPosicao.valorInicial;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         float currentMoveSpeed = moveSpeed * Time.deltaTime;

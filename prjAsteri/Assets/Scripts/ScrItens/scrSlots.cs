@@ -13,7 +13,7 @@ public class scrSlots : MonoBehaviour
         item = novoItem;
 
         icon.sprite = item.icon;
-        icon.enabled = true;
+        icon.enabled = true; 
     }
 
     public void LimparSlot()
@@ -21,6 +21,14 @@ public class scrSlots : MonoBehaviour
         item = null;
 
         icon.sprite = null;
-        icon.enabled = false;
+        icon.enabled = false; 
+    }
+
+    public void UsarItem()
+    {
+        if (item != null)
+        {
+            item.Usar();
+        }
     }
 }

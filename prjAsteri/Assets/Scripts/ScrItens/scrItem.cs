@@ -10,15 +10,15 @@ public class scrItem : MonoBehaviour
 
     void Update()
     {
-        Pegou();
+        Pegou(); 
     }
 
     void Pegou()
     {
          if(emContato && Input.GetKeyDown(KeyCode.E))
         {
-            bool foiPego = scrInventario.instance.Add(itens);
             Debug.Log("Pegou " + itens.name);
+            bool foiPego = scrInventario.instance.Add(itens);
             if (foiPego){ Destroy(gameObject);}
         }
 

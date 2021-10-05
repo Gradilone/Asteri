@@ -7,8 +7,6 @@ public class scrInventario : MonoBehaviour
 
     #region Singleton
 
-    
-
     public static scrInventario instance;
 
     void Awake() 
@@ -41,10 +39,19 @@ public class scrInventario : MonoBehaviour
             itens.Add(Item);
             if (onItemChangedCallback != null)
             {
-                onItemChangedCallback.Invoke(); 
+                onItemChangedCallback.Invoke();  
             }
         }
         return true;
+    }
+
+    public void Remove (DadosItem Item)
+    {
+        itens.Remove(Item);
+        if (onItemChangedCallback != null)
+        {
+            onItemChangedCallback.Invoke();  
+        }
     }
     
 }

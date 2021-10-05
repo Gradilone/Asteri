@@ -5,23 +5,28 @@ using UnityEngine;
 public class scrUIInventario : MonoBehaviour
 {
     scrInventario inventario;
-    
     public Transform todosItens;
-
     scrSlots[] slots;
+
+    public GameObject UIInventario;
+
+
 
     void Start()
     {
         inventario = scrInventario.instance;
         inventario.onItemChangedCallback += UpdateUI;
 
-        slots = todosItens.GetComponentsInChildren<scrSlots>();
+        slots = todosItens.GetComponentsInChildren<scrSlots>(); 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetButtonDown("Inventario"))
+        {
+            UIInventario.SetActive(!UIInventario.activeSelf);
+        }
     }
     void UpdateUI()
     {
@@ -33,7 +38,7 @@ public class scrUIInventario : MonoBehaviour
             }
             else
             {
-                slots[i].LimparSlot();
+                slots[i].LimparSlot(); 
             }
         }
     }

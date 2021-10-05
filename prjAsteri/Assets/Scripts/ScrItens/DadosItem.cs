@@ -9,5 +9,11 @@ public class DadosItem : ScriptableObject
         public Sprite icon = null;
         public bool PodePegar = false; 
         public string descricao; 
+
+        public virtual void Usar()
+        {
+            Debug.Log("Usando " + name); 
+
+        }
     }
 
