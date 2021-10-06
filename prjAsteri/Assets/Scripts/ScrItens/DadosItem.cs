@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,9 +10,8 @@ public class DadosItem : ScriptableObject
         public bool PodePegar = false; 
         public string descricao; 
 
-        public virtual void Usar()
+        public virtual void UsarChave()
         {
-            Debug.Log("Usando " + name); 
 
         }
     }

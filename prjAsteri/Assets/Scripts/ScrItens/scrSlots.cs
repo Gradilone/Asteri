@@ -28,7 +28,7 @@ public class scrSlots : MonoBehaviour
     {
         if (item != null)
         {
-            item.Usar();
+            //item.Usar();
         }
     }
 }

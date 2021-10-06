@@ -19,6 +19,7 @@ public class scrControladorDialogo : MonoBehaviour
     public GameObject bntContinuar;
 
     private scrMovimentoTest Player;
+    private GanharItem Item;
 
 
     void Start()
@@ -84,7 +85,7 @@ public class scrControladorDialogo : MonoBehaviour
     {
         foreach (char letra in dialogoLinhas[linhaAtual].ToCharArray())
         {
-         txtDialogo.text += letra;
+            txtDialogo.text += letra;
             yield return new WaitForSeconds(veloDigitacao);
         }
 
@@ -97,7 +98,7 @@ public class scrControladorDialogo : MonoBehaviour
         if (linhaAtual < dialogoLinhas.Length -1)
         {
             linhaAtual++;
-         txtDialogo.text = "";
+            txtDialogo.text = "";
             StartCoroutine(Digitacao());
         }
         else

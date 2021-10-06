@@ -1,18 +1,14 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class scrChave : MonoBehaviour
+[CreateAssetMenu(fileName = "Chave", menuName = "Inventario/Chave")]
+public class scrChave : DadosItem
 {
-    // Start is called before the first frame update
-    void Start()
+    /*
+    public override void Usar()
     {
-        
+        base.Usar();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    */
 }
