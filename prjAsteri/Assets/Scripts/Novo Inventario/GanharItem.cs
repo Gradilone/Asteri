@@ -4,26 +4,22 @@ using UnityEngine;
 
 public class GanharItem : MonoBehaviour
 {
-    private Inventario inventario;
-    public GameObject bntItem;
+    public GameObject item;
+    private Transform interagivel;
+    public scrControladorDialogo Sla;
+
 
     private void Start() 
     {
-        inventario = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventario>();
-         
+        interagivel = GameObject.FindGameObjectWithTag("PodeItem").transform;
+        Sla = GetComponent<scrControladorDialogo>();
+
     }
 
-    public void GanItem()
+    public void DarItem()
     {
-        for (int i = 0; i < inventario.slots.Length; i++)
-            {
-                 if (inventario.taCheio[i] == false)
-                 {
-                     inventario.taCheio[i] = true;
-                     Instantiate(bntItem, inventario.slots[i].transform, false);
-                     Destroy(gameObject); 
-                     break;
-                 }
-            }
+        Vector2 objetoPOs = new Vector2(interagivel.position.x, interagivel.position.y + 3);
+        Instantiate(item, objetoPOs, Quaternion.identity);
+
     }
 }

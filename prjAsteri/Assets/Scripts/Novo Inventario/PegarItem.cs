@@ -7,14 +7,18 @@ public class PegarItem : MonoBehaviour
     private Inventario inventario;
     public GameObject bntItem;
 
+    public bool emContato;
+    
+
     private void Start() 
     {
         inventario = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventario>();
          
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Player"))
+    private void Update() 
+    {
+        if (emContato && Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("Item Pego");
             for (int i = 0; i < inventario.slots.Length; i++)
@@ -27,6 +31,26 @@ public class PegarItem : MonoBehaviour
                      break;
                  }
             }
+            
+        }
+        
+    }
+
+    void OnTriggerEnter2D(Collider2D quem)
+    {
+        
+        if (quem.CompareTag("Player"))
+        {
+            emContato = true;  
+        } 
+    }
+
+    void OnTriggerExit2D(Collider2D quem)
+    {
+        if (quem.CompareTag("Player"))
+        {
+            emContato = false;  
+            
         }
     }
 }

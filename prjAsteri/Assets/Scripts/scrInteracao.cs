@@ -11,6 +11,9 @@ public class scrInteracao : MonoBehaviour
     [SerializeField] scrControladorDialogo txtDialogo, txtNome; 
     //private string dialogo;
     [SerializeField] bool emContato = false;
+
+
+   
     //public GameObject dBox;
 
     void Start()
@@ -34,16 +37,18 @@ public class scrInteracao : MonoBehaviour
                 
             }
         }
+
+      
         
             
     }
 
     void OnTriggerEnter2D(Collider2D quem)
     {
+        
         if (quem.CompareTag("Player"))
         {
-            emContato = true;
-            
+            emContato = true;  
         } 
     }
 
@@ -55,5 +60,6 @@ public class scrInteracao : MonoBehaviour
             
         }
     }
+
 
 }

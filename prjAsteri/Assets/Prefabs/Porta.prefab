@@ -71,5 +71,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carregandoCena: "Comunica\xE7\xE3o com a Ia"
-  playerPosition: {x: 4.94, y: 1.87}
-  playerValor: {fileID: 11400000, guid: 1a90bca38df5a634ea8e2bd7b36dd473, type: 2}
+  playerPosition: {x: 4.32, y: -0.93}
+  playerValor: {fileID: 11400000, guid: a0cce500b2206664f8f296c2bff0c1a3, type: 2}
