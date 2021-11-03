@@ -5,18 +5,51 @@ using UnityEngine.SceneManagement;
 
 public class scrMudarScene : MonoBehaviour
 {
-    public string carregandoCena;
-    public Vector2 playerPosition;
-    public VectorValor playerValor; 
+    [SerializeField] string carregandoCena;
+    [SerializeField] string inicial;
+    [SerializeField] Vector3 playerPosition;
+    Transform playerValor; 
+    string atual;
+    bool trigger=false;
+
+    void Awake()
+    {
+        inicial = SceneManager.GetActiveScene().name;
+        
+        Debug.Log(playerPosition.x+" "+playerPosition.y);
+        
+        playerValor=GameObject.FindWithTag("Player").transform;
+        
+        DontDestroyOnLoad(gameObject);
+    }
+
+    private void Update()
+    {
+        atual=SceneManager.GetActiveScene().name;
+        if(atual != inicial && atual == carregandoCena && !trigger)
+        {
+            playerValor.position = new Vector3(playerPosition.x,playerPosition.y,0f);
+
+            trigger=true;
+            
+        }
+        else if (atual != inicial)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !other.isTrigger)
         {
-            playerValor.valorInicial = playerPosition;
             SceneManager.LoadScene(carregandoCena); 
+
+            GetComponent<Collider2D>().enabled = false;
+
+            Debug.Log(playerPosition.x+" "+playerPosition.y);
+            //Load();
         }
         
     }
-
 }

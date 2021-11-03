@@ -8,7 +8,21 @@ public class scrMorpheus : MonoBehaviour
     [SerializeField] GameObject inicio;
 
 
+    public static scrMorpheus Instance { get; private set; }
 
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+        
+        DontDestroyOnLoad(gameObject);
+    }
     void Start()
     {
         rbMorpheus = GetComponent<Rigidbody2D>();
@@ -18,7 +32,7 @@ public class scrMorpheus : MonoBehaviour
     {
         if (quem.CompareTag("Inimigo"))
         {
-            rbMorpheus.transform.position = new Vector2(inicio.transform.position.x, inicio.transform.position.y);
+            Destroy(gameObject);
             
         }
     }

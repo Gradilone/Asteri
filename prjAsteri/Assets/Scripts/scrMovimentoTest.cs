@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class scrMovimentoTest : MonoBehaviour
 {
-    public float moveSpeed = 200f;
+    public float moveSpeed = 20000000000000f;
     private Rigidbody2D rbMorpheus;
     private Vector2 ultimoMov;
     public bool MovPlayer;
