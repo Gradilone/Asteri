@@ -1,0 +1,67 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class scrIntContato : MonoBehaviour
+{
+    [TextArea(3, 10)]
+    public string[] dialogoLinhas;
+    public string nome;
+    [SerializeField] scrControladorDialogo txtDialogo, txtNome, imgMorpheus; 
+    //private string dialogo;
+    [SerializeField] bool emContato = false; 
+
+
+   
+    //public GameObject dBox;
+
+    void Start()
+    {
+        imgMorpheus.RetirarMorpheus();
+    }
+
+    private void Update() 
+    {
+        if (emContato) 
+        {
+            //txtDialogo.MostrarBox(dialogo); 
+
+            if (!txtDialogo.dialogoAtivo)
+            {
+                txtDialogo.dialogoLinhas = dialogoLinhas;
+                txtNome.nome = nome;
+                txtDialogo.linhaAtual = 0;
+                txtDialogo.MostrarDialogo();
+                txtNome.MostrarNome(); 
+                imgMorpheus.MostrarMorpheus();
+               
+            }
+            if (scrControladorDialogo.dialogoFim)
+            {
+                Destroy(gameObject);
+            }
+        }
+
+      
+        
+            
+    }
+
+    void OnTriggerEnter2D(Collider2D quem)
+    {
+        
+        if (quem.CompareTag("Player"))
+        {
+            emContato = true;  
+        } 
+    }
+
+    void OnTriggerExit2D(Collider2D quem)
+    {
+        if (quem.CompareTag("Player"))
+        {
+            emContato = false;  
+            
+        }
+    }
+}
