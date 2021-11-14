@@ -13,7 +13,7 @@ public class scrIntContato : MonoBehaviour
 
 
    
-    //public GameObject dBox;
+    
 
     void Start()
     {
@@ -25,7 +25,10 @@ public class scrIntContato : MonoBehaviour
         if (emContato) 
         {
             //txtDialogo.MostrarBox(dialogo); 
-
+            if (scrControladorDialogo.dialogoFim2)
+            {
+                Destroy(gameObject);
+            }
             if (!txtDialogo.dialogoAtivo)
             {
                 txtDialogo.dialogoLinhas = dialogoLinhas;
@@ -36,10 +39,7 @@ public class scrIntContato : MonoBehaviour
                 imgMorpheus.MostrarMorpheus();
                
             }
-            if (scrControladorDialogo.dialogoFim)
-            {
-                Destroy(gameObject);
-            }
+            
         }
 
       

@@ -16,6 +16,7 @@ public class scrControladorDialogo : MonoBehaviour
     public string nome;
     public bool dialogoAtivo;
     public static bool dialogoFim;
+    public static bool dialogoFim2;
 
     public string[] dialogoLinhas;  
     public int linhaAtual = 0;
@@ -126,6 +127,7 @@ public class scrControladorDialogo : MonoBehaviour
     {
         bntContinuar.SetActive(false);
         dialogoFim = false;
+        dialogoFim2 = false;
 
         if (linhaAtual < dialogoLinhas.Length -1)
         {
@@ -143,6 +145,7 @@ public class scrControladorDialogo : MonoBehaviour
 
             Player.podeMover = true;
             dialogoFim = true;
+            dialogoFim2 = true;
            
         }
         

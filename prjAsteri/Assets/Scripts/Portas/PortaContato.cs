@@ -11,7 +11,7 @@ public class PortaContato : MonoBehaviour
     {
          if (SistemaPorta.DialogoAbriu) 
         {
-            Destroy(gameObject);
+            Destroy(gameObject); 
         }
         
         

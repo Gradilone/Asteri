@@ -32,7 +32,7 @@ public class scrMorpheus : MonoBehaviour
     {
         if (quem.CompareTag("Inimigo"))
         {
-            Destroy(gameObject);
+            rbMorpheus.transform.position = new Vector2(inicio.transform.position.x, inicio.transform.position.y);
             
         }
     }

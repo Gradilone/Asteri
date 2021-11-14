@@ -8,12 +8,18 @@ public class Inventario : MonoBehaviour
     public GameObject[] slots;
     public GameObject UIInventario;
 
+
+    private void Start() {
+         UIInventario.SetActive(false);
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Inventario"))
         {
             UIInventario.SetActive(!UIInventario.activeSelf);
+            DontDestroyOnLoad(gameObject);
         }
     }
     

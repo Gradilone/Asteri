@@ -37,6 +37,7 @@ public class scrInteracao : MonoBehaviour
                 imgMorpheus.MostrarMorpheus();
                 
             }
+            
         }
 
       

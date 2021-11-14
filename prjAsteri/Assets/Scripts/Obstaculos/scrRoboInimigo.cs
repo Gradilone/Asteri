@@ -9,7 +9,7 @@ public class scrRoboInimigo : MonoBehaviour
 
     public float moveSpeed;
 
-    float raioPonto = 1;
+    float raioPonto = 0.1f;
 
     private void Update() 
     {

@@ -16,7 +16,6 @@ public class SistemaPorta : MonoBehaviour
             DialogoAbriu = true;
             Destroy(gameObject);
 
-
         }
     }
 }
