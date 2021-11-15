@@ -5,15 +5,13 @@ using UnityEngine.UI;
 
 public class PortaContato : MonoBehaviour
 { 
-   
-
+    
     private void Update() 
     {
          if (SistemaPorta.DialogoAbriu) 
         {
-            Destroy(gameObject); 
-        }
-        
+            Destroy(gameObject);  
+        }   
         
     }
    
@@ -22,7 +20,8 @@ public class PortaContato : MonoBehaviour
         
         if (quem.CompareTag("Player"))
         {
-            SistemaPorta.Tocou = true;  
+            SistemaPorta.Tocou = true; 
+            
         } 
     }
 

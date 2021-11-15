@@ -10,6 +10,7 @@ public class scrDialogoHera : MonoBehaviour
     public string nome;
     [SerializeField] scrControladorDialogo txtDialogo, txtNome, imgHera, imgMorpheus; 
     [SerializeField] bool emContato = false; 
+    float seconds = 1f;
 
     
 
@@ -20,9 +21,9 @@ public class scrDialogoHera : MonoBehaviour
 
     private void Update() 
     {
-        if (emContato && Input.GetKeyDown(KeyCode.E)) 
+        
+        if (emContato) 
         {
-
             if (!txtDialogo.dialogoAtivo)
             {
                 txtDialogo.dialogoLinhas = dialogoLinhas;
@@ -30,15 +31,15 @@ public class scrDialogoHera : MonoBehaviour
                 txtDialogo.linhaAtual = 0;
                 txtDialogo.MostrarDialogo();
             }
-        }  
 
-        if (txtDialogo.linhaAtual == 2 || txtDialogo.linhaAtual == 4 || txtDialogo.linhaAtual == 7 || txtDialogo.linhaAtual == 11 || txtDialogo.linhaAtual == 21 || txtDialogo.linhaAtual == 26)
+            if (txtDialogo.linhaAtual == 2 || txtDialogo.linhaAtual == 4 || txtDialogo.linhaAtual == 7 || txtDialogo.linhaAtual == 11 || txtDialogo.linhaAtual == 21 || txtDialogo.linhaAtual == 26)
         {
             //Falas Morpheus
 
             txtNome.Nome_Morpheus();
             imgMorpheus.MostrarMorpheus();
             imgHera.RetirarHera();
+            
         }
         else
         {
@@ -48,6 +49,16 @@ public class scrDialogoHera : MonoBehaviour
             imgMorpheus.RetirarMorpheus();
             imgHera.MostrarHera();
         }
+
+        if (txtDialogo.linhaAtual == 32)
+        {
+            Destroy(gameObject);
+        }
+            
+        }  
+
+        
+       
     }
 
     
@@ -57,7 +68,8 @@ public class scrDialogoHera : MonoBehaviour
         
         if (quem.CompareTag("Player"))
         {
-            emContato = true;  
+            emContato = true; 
+            
         } 
     }
 
@@ -68,10 +80,5 @@ public class scrDialogoHera : MonoBehaviour
             emContato = false;  
             
         }
-    }
-
-
-
-
-
+    }   
 }

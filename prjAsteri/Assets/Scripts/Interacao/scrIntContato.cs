@@ -10,9 +10,6 @@ public class scrIntContato : MonoBehaviour
     [SerializeField] scrControladorDialogo txtDialogo, txtNome, imgMorpheus; 
     //private string dialogo;
     [SerializeField] bool emContato = false; 
-
-
-   
     
 
     void Start()
@@ -25,9 +22,9 @@ public class scrIntContato : MonoBehaviour
         if (emContato) 
         {
             //txtDialogo.MostrarBox(dialogo); 
-            if (scrControladorDialogo.dialogoFim2)
+            if (txtDialogo.dialogoAtivo)
             {
-                Destroy(gameObject);
+                Destroy(gameObject); 
             }
             if (!txtDialogo.dialogoAtivo)
             {
@@ -40,11 +37,11 @@ public class scrIntContato : MonoBehaviour
                
             }
             
-        }
-
-      
-        
-            
+        }   
+        if (SistemaPorta.DialogoAbriu) 
+        {
+            Destroy(gameObject); 
+        }   
     }
 
     void OnTriggerEnter2D(Collider2D quem)

@@ -10,7 +10,7 @@ public class scrInteracao : MonoBehaviour
     public string nome;
     [SerializeField] scrControladorDialogo txtDialogo, txtNome, imgMorpheus; 
     //private string dialogo;
-    [SerializeField] bool emContato = false; 
+    public bool emContato = false; 
 
 
    

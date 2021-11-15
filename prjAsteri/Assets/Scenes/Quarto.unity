@@ -1568,7 +1568,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1808888121}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -2135,10 +2135,30 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 599917882338617251, guid: e07802705586a5a4ea0a6d46236b9e67,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3997132797363678039, guid: e07802705586a5a4ea0a6d46236b9e67,
         type: 3}
       propertyPath: m_Name
       value: Canvas Dialogo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367198731234423785, guid: e07802705586a5a4ea0a6d46236b9e67,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645690216266715280, guid: e07802705586a5a4ea0a6d46236b9e67,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1439329748}
+    - target: {fileID: 8645690216266715280, guid: e07802705586a5a4ea0a6d46236b9e67,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ProxDialogo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e07802705586a5a4ea0a6d46236b9e67, type: 3}
@@ -2309,7 +2329,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1808888121}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 

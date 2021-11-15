@@ -11,6 +11,7 @@ public class Inventario : MonoBehaviour
 
     private void Start() {
          UIInventario.SetActive(false);
+         
     }
 
     // Update is called once per frame

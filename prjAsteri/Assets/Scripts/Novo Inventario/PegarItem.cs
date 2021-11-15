@@ -8,6 +8,7 @@ public class PegarItem : MonoBehaviour
     public GameObject bntItem;
 
     public bool emContato;
+    
 
     private void Start() 
     {
