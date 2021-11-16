@@ -11,14 +11,14 @@ GameObject:
   - component: {fileID: 895546902080018102}
   - component: {fileID: 895546902080018101}
   - component: {fileID: 895546902080018103}
-  - component: {fileID: 895546902080018123}
   - component: {fileID: 895546902080018122}
   - component: {fileID: 895546902080018121}
   - component: {fileID: 895546902080018120}
   - component: {fileID: 7362609248218520729}
   - component: {fileID: 7378269956444759524}
   - component: {fileID: 577563946}
-  m_Layer: 8
+  - component: {fileID: 1748911089269623551}
+  m_Layer: 0
   m_Name: Morpheus
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -111,19 +111,6 @@ MonoBehaviour:
   movendo: 1
   naomovendo: 0
   comecaPosicao: {fileID: 0}
---- !u!114 &895546902080018123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895546902080018100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a9958d0bd7df434387f333a3727d959, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inicio: {fileID: 0}
 --- !u!70 &895546902080018122
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -246,6 +233,21 @@ MonoBehaviour:
   - {fileID: 636660760}
   - {fileID: 1915318552}
   UIObjetivos: {fileID: 700988209}
+--- !u!114 &1748911089269623551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895546902080018100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9958d0bd7df434387f333a3727d959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inicio1: {fileID: 1097684887701991800, guid: be95dd5bf3a6ffd40b2a86a651eb1bfd, type: 3}
+  inicio2: {fileID: 779836242161777538, guid: 233e0f8d64bf8bb459f5c5a86eb367eb, type: 3}
+  inicio3: {fileID: 0}
 --- !u!1 &5466728137300819575
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,4 +29,12 @@ public class GeraVermelho : MonoBehaviour
             SistemaPorta.VermelhoTocou = true;
         } 
     }
+
+    void OnTriggerExit2D(Collider2D quem)
+    {
+        if (quem.CompareTag("Player"))
+        {
+            SistemaPorta.VermelhoTocou = false;
+        } 
+    }
 }

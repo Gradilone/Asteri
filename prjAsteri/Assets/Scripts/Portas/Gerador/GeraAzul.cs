@@ -29,4 +29,12 @@ public class GeraAzul : MonoBehaviour
             SistemaPorta.AzulTocou = true;
         } 
     }
+
+    void OnTriggerExit2D(Collider2D quem)
+    {
+        if (quem.CompareTag("Player"))
+        {
+            SistemaPorta.AzulTocou = false;
+        } 
+    }
 }

@@ -31,4 +31,12 @@ public class GeradorContato : MonoBehaviour
         } 
     }
 
+    void OnTriggerExit2D(Collider2D quem)
+    {
+        if (quem.CompareTag("Player"))
+        {
+            SistemaPorta.AmareloTocou = false;
+        } 
+    }
+
 }

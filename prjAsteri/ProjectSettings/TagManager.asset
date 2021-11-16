@@ -8,6 +8,15 @@ TagManager:
   - Porta
   - Inimigo
   - Inventario
+  - PontoB
+  - PontoA
+  - Esquerda
+  - Direita
+  - Cima
+  - Baixo
+  - Inimigo1
+  - Inimigo2
+  - Inimigo3
   layers:
   - Default
   - TransparentFX
@@ -18,10 +27,10 @@ TagManager:
   - 
   - 
   - RayCAst
-  - 
-  - 
-  - 
-  - 
+  - RayEsquerda
+  - RayDireita
+  - RayCima
+  - RayBaixo
   - 
   - 
   - 

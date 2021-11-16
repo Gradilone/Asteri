@@ -29,4 +29,12 @@ public class GeraVerde : MonoBehaviour
             SistemaPorta.VerdeTocou = true;
         } 
     }
+
+    void OnTriggerExit2D(Collider2D quem)
+    {
+        if (quem.CompareTag("Player"))
+        {
+            SistemaPorta.VerdeTocou = false;
+        } 
+    }
 }

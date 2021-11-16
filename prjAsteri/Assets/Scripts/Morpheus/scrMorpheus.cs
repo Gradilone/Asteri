@@ -5,7 +5,9 @@ using UnityEngine;
 public class scrMorpheus : MonoBehaviour
 {
     private Rigidbody2D rbMorpheus;
-    [SerializeField] GameObject inicio;
+    [SerializeField] GameObject inicio1;
+    [SerializeField] GameObject inicio2;
+    [SerializeField] GameObject inicio3;
 
 
     public static scrMorpheus Instance { get; private set; }
@@ -30,9 +32,21 @@ public class scrMorpheus : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D quem)
     {
-        if (quem.CompareTag("Inimigo"))
+        if (quem.CompareTag("Inimigo1"))
         {
-            rbMorpheus.transform.position = new Vector2(inicio.transform.position.x, inicio.transform.position.y);
+            rbMorpheus.transform.position = new Vector2(inicio1.transform.position.x, inicio1.transform.position.y);
+            
+        }
+
+        if (quem.CompareTag("Inimigo2"))
+        {
+            rbMorpheus.transform.position = new Vector2(inicio2.transform.position.x, inicio2.transform.position.y);
+            
+        }
+
+        if (quem.CompareTag("Inimigo3"))
+        {
+            rbMorpheus.transform.position = new Vector2(inicio3.transform.position.x, inicio3.transform.position.y);
             
         }
     }
