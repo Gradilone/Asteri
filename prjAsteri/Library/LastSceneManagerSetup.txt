@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Danger1.unity
+- path: Assets/Scenes/ComIa.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
