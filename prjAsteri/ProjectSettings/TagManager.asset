@@ -17,6 +17,7 @@ TagManager:
   - Inimigo1
   - Inimigo2
   - Inimigo3
+  - choque
   layers:
   - Default
   - TransparentFX

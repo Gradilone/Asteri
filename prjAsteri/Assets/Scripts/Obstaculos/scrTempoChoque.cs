@@ -22,7 +22,7 @@ public class scrTempoChoque : MonoBehaviour
             }
             else
             {
-                index++;
+                index++; 
             }
         }
 
@@ -31,7 +31,7 @@ public class scrTempoChoque : MonoBehaviour
 
      void OnTriggerEnter2D(Collider2D quem)
     {
-        if (quem.CompareTag("pontoA"))
+        if (quem.CompareTag("choque"))
         {
             scrChoque.emContato = false;
         } 
@@ -39,7 +39,7 @@ public class scrTempoChoque : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D quem)
     {
-        if (quem.CompareTag("pontoA"))
+        if (quem.CompareTag("choque"))
         {
             scrChoque.emContato = true; 
             

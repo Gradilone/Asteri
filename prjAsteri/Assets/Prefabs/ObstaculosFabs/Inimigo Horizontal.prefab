@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 389054453922815201}
   - component: {fileID: 389054453922815227}
   m_Layer: 0
-  m_Name: 'Inimigo '
+  m_Name: Inimigo Horizontal
   m_TagString: Inimigo1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -15,6 +15,7 @@ public class scrMovimentoTest : MonoBehaviour
     public float naomovendo = 0.0f;
 
     public VectorValor comecaPosicao;
+    [SerializeField] GameObject CampoVisao;
 
     void Start()
     {
@@ -93,4 +94,5 @@ public class scrMovimentoTest : MonoBehaviour
         }
             
         }
+
 }

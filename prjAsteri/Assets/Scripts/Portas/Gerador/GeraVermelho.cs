@@ -17,6 +17,7 @@ public class GeraVermelho : MonoBehaviour
         if (SistemaPorta.Vermelho)
         {
             Instantiate(IconVermelho, obj_inventario.Objetivos[1].transform, false);
+            scrVitoria.TemVermelho = true;
             Destroy(gameObject);
         }
     }

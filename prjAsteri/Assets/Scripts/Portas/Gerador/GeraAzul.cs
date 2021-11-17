@@ -8,6 +8,9 @@ public class GeraAzul : MonoBehaviour
     
     public GameObject IconAzul;
 
+    
+
+
 
      private void Start() {
         obj_inventario = GameObject.FindGameObjectWithTag("Player").GetComponent<ObjInventario>();
@@ -17,6 +20,7 @@ public class GeraAzul : MonoBehaviour
         if (SistemaPorta.Azul)
         {
             Instantiate(IconAzul, obj_inventario.Objetivos[3].transform, false);
+            scrVitoria.TemAzul = true;
             Destroy(gameObject);
         }
     }

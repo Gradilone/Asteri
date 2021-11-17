@@ -17,6 +17,7 @@ public class GeradorContato : MonoBehaviour
         if (SistemaPorta.Amarelo)
         {
             Instantiate(IconAmarelo, obj_inventario.Objetivos[0].transform, false);
+            scrVitoria.TemAmarelo = true;
             Destroy(gameObject);
 
         }

@@ -17,6 +17,7 @@ public class GeraVerde : MonoBehaviour
         if (SistemaPorta.Verde)
         {
             Instantiate(IconVerde, obj_inventario.Objetivos[2].transform, false);
+            scrVitoria.TemVerde = true;
             Destroy(gameObject);
         }
     }
