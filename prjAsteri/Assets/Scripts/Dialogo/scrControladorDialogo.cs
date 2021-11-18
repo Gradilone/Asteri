@@ -17,6 +17,7 @@ public class scrControladorDialogo : MonoBehaviour
     public bool dialogoAtivo;
     public  bool dialogoFim;
 
+
     public string[] dialogoLinhas;  
     public int linhaAtual = 0;
 
@@ -40,7 +41,8 @@ public class scrControladorDialogo : MonoBehaviour
         imgHera.enabled = false;
         imgMorpheus.enabled = false;
         Player = FindObjectOfType<scrMovimentoTest>();
-        StartCoroutine(Digitacao()); 
+        StartCoroutine(Digitacao());
+         
         
 
 
@@ -48,11 +50,15 @@ public class scrControladorDialogo : MonoBehaviour
 
     void Update()
     {
+        
+        
         if  (txtDialogo.text == dialogoLinhas[linhaAtual])
         {
             bntContinuar.SetActive(true);
-        if (dialogoAtivo && Input.GetKeyDown(KeyCode.Space))
+            
+        if (scrPauseMenu.jogoPausado == false && dialogoAtivo && Input.GetKeyDown(KeyCode.Space))
         {
+            
             ProxDialogo();  
         }  
         }
@@ -67,6 +73,7 @@ public class scrControladorDialogo : MonoBehaviour
         txtDialogo.text = "";
         StartCoroutine(Digitacao());
         bntContinuar.SetActive(false);
+        
         Player.podeMover = false;
 
     }
@@ -126,7 +133,8 @@ public class scrControladorDialogo : MonoBehaviour
     {
         bntContinuar.SetActive(false);
         
-
+        
+        
         if (linhaAtual < dialogoLinhas.Length -1)
         {
             linhaAtual++;
@@ -143,9 +151,10 @@ public class scrControladorDialogo : MonoBehaviour
             bntContinuar.SetActive(false);
 
             Player.podeMover = true;
+
            
-        }
-        
+        } 
+   
 
     }
 

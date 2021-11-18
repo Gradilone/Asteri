@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3822800764304856888
+--- !u!1 &8848207930330162044
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,36 +8,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6778892307154602126}
-  - component: {fileID: 9065333559666082305}
+  - component: {fileID: 1284934996266597578}
+  - component: {fileID: 3605412868158600773}
   m_Layer: 0
-  m_Name: Controlador Dialogo
+  m_Name: Controlador Relatorio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6778892307154602126
+--- !u!4 &1284934996266597578
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3822800764304856888}
+  m_GameObject: {fileID: 8848207930330162044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.062828, y: -30.469112, z: -12.809871}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 344.695, y: 134.402, z: -12.233426}
+  m_LocalScale: {x: 0.955, y: 0.955, z: 0.955}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9065333559666082305
+--- !u!114 &3605412868158600773
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3822800764304856888}
+  m_GameObject: {fileID: 8848207930330162044}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 664129f6272fa784a8587d671822d030, type: 3}
@@ -52,6 +52,7 @@ MonoBehaviour:
   imgMorpheus: {fileID: 0}
   nome: 
   dialogoAtivo: 0
+  dialogoFim: 0
   dialogoLinhas:
   - 
   - 
