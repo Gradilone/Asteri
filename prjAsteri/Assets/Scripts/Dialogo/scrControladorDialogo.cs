@@ -14,7 +14,7 @@ public class scrControladorDialogo : MonoBehaviour
     [SerializeField] Image imgHera;
     [SerializeField] Image imgMorpheus;
     public string nome;
-    public bool dialogoAtivo;
+    public bool dialogoAtivo; 
     public  bool dialogoFim;
 
 
