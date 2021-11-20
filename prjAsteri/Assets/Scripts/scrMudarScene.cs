@@ -8,7 +8,10 @@ public class scrMudarScene : MonoBehaviour
     [SerializeField] string carregandoCena;
     [SerializeField] string inicial;
     [SerializeField] Vector3 playerPosition;
+
+
     Transform playerValor; 
+    
     string atual;
     bool trigger=false;
 

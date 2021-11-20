@@ -8,9 +8,11 @@ public class scrVitoria : MonoBehaviour
     public static bool TemAmarelo = false;
     public static bool TemVerde = false;
     public static bool TemVermelho = false;
+
+    public GameObject UIObjetivos;
     void Start()
     {
-        
+        UIObjetivos.SetActive(false);
     }
 
     // Update is called once per frame
@@ -21,5 +23,12 @@ public class scrVitoria : MonoBehaviour
             Debug.Log("Venceu");
         }
         
+        if (TemAzul == true || TemVerde == true || TemVermelho == true || TemAmarelo == true)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                UIObjetivos.SetActive(!UIObjetivos.activeSelf);
+            }
+        }
     }
 }

@@ -13,6 +13,10 @@ public class scrControladorDialogo : MonoBehaviour
     [SerializeField] Image pnlMorpheus;
     [SerializeField] Image imgHera;
     [SerializeField] Image imgMorpheus;
+    [SerializeField] Image pnlRobo;
+    [SerializeField] Image imgRobo;
+
+     
     public string nome;
     public bool dialogoAtivo; 
     public  bool dialogoFim;
@@ -30,6 +34,8 @@ public class scrControladorDialogo : MonoBehaviour
     public string nomeMorpheus = "Morpheus";
 
     public string nomeHera = "Hera";
+
+    public static bool podeMover;
     
 
 
@@ -74,7 +80,7 @@ public class scrControladorDialogo : MonoBehaviour
         StartCoroutine(Digitacao());
         bntContinuar.SetActive(false);
         
-        Player.podeMover = false;
+        podeMover = false;
 
     }
 
@@ -117,6 +123,18 @@ public class scrControladorDialogo : MonoBehaviour
         pnlMorpheus.enabled = false; 
     }
 
+    public void MostrarRobo()
+    {
+        imgRobo.enabled = true;
+        pnlRobo.enabled = true;
+    }
+
+    public void RetirarRobo()
+    {
+        imgRobo.enabled = false;
+        pnlRobo.enabled = false;
+    }
+
     #endregion
 
     IEnumerator Digitacao()
@@ -127,6 +145,17 @@ public class scrControladorDialogo : MonoBehaviour
             yield return new WaitForSeconds(veloDigitacao);
         }
 
+    }
+
+    public void AcabaDialogo()
+    {
+        dialogoFim = true;
+            dBox.SetActive(false);
+            dialogoAtivo = false;
+            linhaAtual = 0;
+            bntContinuar.SetActive(false);
+
+            podeMover = true;
     }
 
     public void ProxDialogo()
@@ -144,14 +173,7 @@ public class scrControladorDialogo : MonoBehaviour
         }
         else
         {
-            dialogoFim = true;
-            dBox.SetActive(false);
-            dialogoAtivo = false;
-            linhaAtual = 0;
-            bntContinuar.SetActive(false);
-
-            Player.podeMover = true;
-
+            AcabaDialogo();
            
         } 
    

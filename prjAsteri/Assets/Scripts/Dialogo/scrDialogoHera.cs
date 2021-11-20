@@ -10,7 +10,9 @@ public class scrDialogoHera : MonoBehaviour
     public string nome;
     [SerializeField] scrControladorDialogo txtDialogo, txtNome, imgHera, imgMorpheus; 
     [SerializeField] bool emContato = false; 
-    float seconds = 1f;
+
+    public int LinhaFinal = 32;
+
 
     
 
@@ -50,9 +52,10 @@ public class scrDialogoHera : MonoBehaviour
             imgHera.MostrarHera();
         }
 
-        if (txtDialogo.linhaAtual == 32)
+        if (txtDialogo.linhaAtual == LinhaFinal)
         {
             Destroy(gameObject);
+
         }
             
         }  

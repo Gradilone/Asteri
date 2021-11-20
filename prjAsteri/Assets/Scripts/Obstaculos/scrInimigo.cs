@@ -78,7 +78,7 @@ public class scrInimigo : MonoBehaviour
  
      if (emContatoB)
      {
-         yield return new WaitForSeconds(esperaTime);
+         yield return new WaitForSeconds(esperaTime); 
          VirarDireita();
      }
 

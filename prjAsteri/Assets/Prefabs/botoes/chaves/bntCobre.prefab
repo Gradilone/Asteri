@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9054700656565673225}
   - component: {fileID: 5446353508073040501}
   - component: {fileID: 7089828987980175158}
+  - component: {fileID: -3742602280959517746}
   m_Layer: 5
   m_Name: bntCobre
   m_TagString: Untagged
@@ -116,4 +117,27 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5446353508073040501}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -3742602280959517746}
+        m_MethodName: Usarbronze
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-3742602280959517746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5194334260023184605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53998cd4239fa545951d17550774abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

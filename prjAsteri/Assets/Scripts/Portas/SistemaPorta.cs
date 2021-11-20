@@ -16,6 +16,18 @@ public class SistemaPorta : MonoBehaviour
     public static bool Vermelho = false;
     public static bool Verde = false;
 
+    public static bool OuroTocou = false;
+
+    public static bool PrataTocou = false;
+
+    public static bool BronzeTocou = false;
+
+    public static bool Ouro = false;
+
+    public static bool Prata = false;
+
+    public static bool Bronze = false;
+
   
     public void Usar()
     {
@@ -60,6 +72,33 @@ public class SistemaPorta : MonoBehaviour
         if (VermelhoTocou)
         {
             Vermelho = true;
+            Destroy(gameObject);
+        }
+    }
+
+    public void UsarOuro()
+    {
+        if (OuroTocou)
+        {
+            Ouro = true;
+            Destroy(gameObject);
+        }
+    }
+
+    public void UsarPrata()
+    {
+        if (PrataTocou)
+        {
+            Prata = true;
+            Destroy(gameObject);
+        }
+    }
+
+    public void Usarbronze()
+    {
+        if (BronzeTocou)
+        {
+            Bronze = true;
             Destroy(gameObject);
         }
     }

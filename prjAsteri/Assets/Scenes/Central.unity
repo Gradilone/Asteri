@@ -688,6 +688,7 @@ MonoBehaviour:
   txtNome: {fileID: 428718081}
   imgHera: {fileID: 428718081}
   imgMorpheus: {fileID: 428718081}
+  imgRobo: {fileID: 428718081}
   emContato: 0
 --- !u!61 &295923640
 BoxCollider2D:
@@ -725,13 +726,40 @@ GameObject:
   m_Component:
   - component: {fileID: 335137500}
   - component: {fileID: 335137499}
+  - component: {fileID: 335137498}
   m_Layer: 0
-  m_Name: "Mec\xE2nico Pixel Art"
+  m_Name: Robo Operario
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &335137498
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335137497}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.06610471, y: -1.9831414}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.347826, y: 4.347826}
+    newSize: {x: 4.347826, y: 4.347826}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.108692, y: 0.38154316}
+  m_EdgeRadius: 0
 --- !u!212 &335137499
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1483,6 +1511,16 @@ PrefabInstance:
       propertyPath: dialogoLinhas.Array.data[7]
       value: "N\xE3o gosto de pensar nisso por muito tempo."
       objectReference: {fileID: 0}
+    - target: {fileID: 6270670592919985189, guid: 07d1ae2ae64bd9745a0532f486b7977a,
+        type: 3}
+      propertyPath: imgHera
+      value: 
+      objectReference: {fileID: 843933224}
+    - target: {fileID: 6270670592919985189, guid: 07d1ae2ae64bd9745a0532f486b7977a,
+        type: 3}
+      propertyPath: imgRobo
+      value: 
+      objectReference: {fileID: 843933224}
     - target: {fileID: 6270670592919985191, guid: 07d1ae2ae64bd9745a0532f486b7977a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1669,6 +1707,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 636660761, guid: f5504237344dcfd41b2a184448259759, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -25.259949
+      objectReference: {fileID: 0}
     - target: {fileID: 1557600636, guid: f5504237344dcfd41b2a184448259759, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -7.4000244
@@ -1896,6 +1938,88 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c4a771bafb54a641b45650fc9e2f70d, type: 3}
+--- !u!1 &938632968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 938632969}
+  - component: {fileID: 938632971}
+  - component: {fileID: 938632970}
+  m_Layer: 0
+  m_Name: Armario Dia Com chave
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &938632969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938632968}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1478750908}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &938632970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938632968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44427bafdf6e00d4699e4c5bb52d7a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bntItem: {fileID: 2153720540328284736, guid: 9ec1dc9735839ee41b038f88ddb10ade, type: 3}
+  dialogoLinhas:
+  - Destrancou!
+  - "H\xE1 uma chave prateada pendurada em um gancho."
+  - O que devo fazer com ela?
+  nome: Morpheus
+  txtDialogo: {fileID: 428718081}
+  txtNome: {fileID: 428718081}
+  imgMorpheus: {fileID: 428718081}
+  imgHera: {fileID: 428718081}
+  imgRobo: {fileID: 428718081}
+  DiaAntes: {fileID: 984039504}
+--- !u!61 &938632971
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938632968}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -7.038912, y: 1.9259949}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 24, y: 22}
+    newSize: {x: 6, y: 5.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.000149, y: 2.1330605}
+  m_EdgeRadius: 0
 --- !u!1 &984039504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,6 +2071,7 @@ MonoBehaviour:
   txtNome: {fileID: 428718081}
   imgMorpheus: {fileID: 428718081}
   imgHera: {fileID: 428718081}
+  imgRobo: {fileID: 428718081}
   emContato: 0
 --- !u!61 &984039507
 BoxCollider2D:
@@ -2107,8 +2232,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1039327569}
-  - component: {fileID: 1039327571}
   - component: {fileID: 1039327570}
+  - component: {fileID: 1039327571}
   m_Layer: 0
   m_Name: Robo Dialogo
   m_TagString: Untagged
@@ -2143,7 +2268,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0000005364418, y: -1.2190495}
+  m_Offset: {x: -0.049579084, y: -1.2190495}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2154,7 +2279,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6360248, y: 3.438099}
+  m_Size: {x: 1.7351819, y: 3.438099}
   m_EdgeRadius: 0
 --- !u!114 &1039327571
 MonoBehaviour:
@@ -2165,21 +2290,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1039327568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79d55781750eee24aa376ca40b235210, type: 3}
+  m_Script: {fileID: 11500000, guid: 8517297c268ca8e48bd3b491eb1f4159, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bntItem: {fileID: 3229787699413322309, guid: 751f99c2ac054674c8ab905bead895b0, type: 3}
   dialogoLinhas:
   - "Ol\xE1 Morpheus est\xE1vamos te esperando."
   - "A situa\xE7\xE3o est\xE1 cr\xEDtica!"
-  - "Hera te explicar\xE1 o que est\xE1 acontecendo."
-  - "S\xF2 consegui resgatar este fio antes deles me perseguirem."
+  - "Hera te explicar\xE1 melhor o que est\xE1 acontecendo."
+  - "S\xF3 consegui resgatar este fio antes deles me perseguirem."
   - Foi por pouco, quase fui pego.
   - Espero que isso te ajude.
-  nome: "Rob\xF4 Oper\xE1rio"
+  nome: "Robo Oper\xE1rio"
   txtDialogo: {fileID: 428718081}
   txtNome: {fileID: 428718081}
   imgMorpheus: {fileID: 428718081}
+  imgRobo: {fileID: 428718081}
+  imgHera: {fileID: 428718081}
   emContatoRecompensa: 0
 --- !u!1 &1208556732
 GameObject:
@@ -2351,6 +2478,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 984039505}
+  - {fileID: 938632969}
   m_Father: {fileID: 1784712309}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3032,9 +3160,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -714122215
-  m_SortingLayer: -2
-  m_SortingOrder: 8
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a015d55677a00404db50ed10def5cc01, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3059,7 +3187,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.048672, y: 0.6890044}
+  m_Offset: {x: 3.048672, y: -0.54178953}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3070,7 +3198,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6784015, y: 3.908927}
+  m_Size: {x: 1.6784015, y: 1.447339}
   m_EdgeRadius: 0
 --- !u!1 &2030651855
 GameObject:

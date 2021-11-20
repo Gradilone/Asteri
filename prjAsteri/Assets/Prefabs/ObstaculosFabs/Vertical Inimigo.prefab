@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 2271514821771044228}
   m_Layer: 0
   m_Name: Vertical Inimigo
-  m_TagString: Inimigo2
+  m_TagString: Inimigo3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,7 +227,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!70 &8080414886847190747
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

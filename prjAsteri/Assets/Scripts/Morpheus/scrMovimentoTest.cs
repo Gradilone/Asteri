@@ -9,7 +9,7 @@ public class scrMovimentoTest : MonoBehaviour
     private Vector2 ultimoMov;
     public bool MovPlayer;
     public bool movVertical; 
-    public bool podeMover;
+    //public static bool podeMover;
     public Animator anim;
     public float movendo = 1.0f;
     public float naomovendo = 0.0f;
@@ -20,7 +20,7 @@ public class scrMovimentoTest : MonoBehaviour
     void Start()
     {
         rbMorpheus = GetComponent<Rigidbody2D>();
-        podeMover = true; 
+        scrControladorDialogo.podeMover = true; 
 
         //transform.position = comecaPosicao.valorInicial;
     }
@@ -50,7 +50,7 @@ public class scrMovimentoTest : MonoBehaviour
         }
         bool isMovingVertical = Mathf.Abs(vertical) > 0.5f;
 
-        if(!podeMover)
+        if(scrControladorDialogo.podeMover == false)
         {
          rbMorpheus.velocity = Vector2.zero;
             anim.SetFloat("Velocidade", naomovendo);

@@ -388,7 +388,8 @@ MonoBehaviour:
   txtDialogo: {fileID: 1558298588}
   txtNome: {fileID: 1558298588}
   imgMorpheus: {fileID: 1558298588}
-  imgHera: {fileID: 0}
+  imgHera: {fileID: 1558298588}
+  imgRobo: {fileID: 1558298588}
   emContato: 0
 --- !u!61 &301121389
 BoxCollider2D:
@@ -498,6 +499,7 @@ MonoBehaviour:
   txtNome: {fileID: 1558298588}
   imgMorpheus: {fileID: 1558298588}
   imgHera: {fileID: 1558298588}
+  imgRobo: {fileID: 1558298588}
   emContato: 0
 --- !u!61 &409572042
 BoxCollider2D:
@@ -1128,13 +1130,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogoLinhas:
-  - "Uma confort\xE1vel cama"
-  - Eu dormiria aqui se sentisse sono
+  - "Uma confort\xE1vel cama."
+  - Eu dormiria aqui se sentisse sono.
   nome: Morpheus
   txtDialogo: {fileID: 1558298588}
   txtNome: {fileID: 1558298588}
   imgMorpheus: {fileID: 1558298588}
-  imgHera: {fileID: 0}
+  imgHera: {fileID: 1558298588}
+  imgRobo: {fileID: 1558298588}
   emContato: 0
 --- !u!61 &1099256028
 BoxCollider2D:
@@ -1267,6 +1270,7 @@ MonoBehaviour:
   txtDialogo: {fileID: 1558298588}
   txtNome: {fileID: 1558298588}
   imgMorpheus: {fileID: 1558298588}
+  imgRobo: {fileID: 1558298588}
   emContatoRecompensa: 0
 --- !u!1 &1126800630
 GameObject:
@@ -1380,7 +1384,8 @@ MonoBehaviour:
   txtDialogo: {fileID: 2140265982}
   txtNome: {fileID: 2140265982}
   imgMorpheus: {fileID: 2140265982}
-  imgHera: {fileID: 0}
+  imgHera: {fileID: 2140265982}
+  imgRobo: {fileID: 2140265982}
   emContato: 0
 --- !u!61 &1126800634
 BoxCollider2D:
@@ -2360,6 +2365,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2968763438368017011, guid: 836fb15c8be4e0745a39e7f7339879ea,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3079767423153943356, guid: 836fb15c8be4e0745a39e7f7339879ea,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 836fb15c8be4e0745a39e7f7339879ea, type: 3}

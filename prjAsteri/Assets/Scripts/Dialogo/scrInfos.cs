@@ -20,11 +20,10 @@ public class scrInfos : MonoBehaviour
 
     public GameObject bntContinuar;
 
-    private scrMovimentoTest Player;
 
      void Start()
     {
-        Player = FindObjectOfType<scrMovimentoTest>();
+        
         StartCoroutine(Digitacao());
 
     }
@@ -51,7 +50,7 @@ public class scrInfos : MonoBehaviour
         StartCoroutine(Digitacao());
         bntContinuar.SetActive(false);
         
-        Player.podeMover = false;
+       
 
     }
 
@@ -84,7 +83,6 @@ public class scrInfos : MonoBehaviour
             linhaAtual = 0;
             bntContinuar.SetActive(false);
 
-            Player.podeMover = true;
 
         }
     }

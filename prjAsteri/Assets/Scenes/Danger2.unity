@@ -214,6 +214,26 @@ PrefabInstance:
       propertyPath: rotaPontos
       value: 
       objectReference: {fileID: 1680367923}
+    - target: {fileID: 2271514821883084168, guid: 9fe8b70760a2cbb4c88c8aeeb6d838ba,
+        type: 3}
+      propertyPath: m_Points.Array.data[2].x
+      value: 3.312946
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271514821883084168, guid: 9fe8b70760a2cbb4c88c8aeeb6d838ba,
+        type: 3}
+      propertyPath: m_Points.Array.data[2].y
+      value: 5.854542
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271514821883084168, guid: 9fe8b70760a2cbb4c88c8aeeb6d838ba,
+        type: 3}
+      propertyPath: m_Points.Array.data[1].x
+      value: -3.2663405
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271514821883084168, guid: 9fe8b70760a2cbb4c88c8aeeb6d838ba,
+        type: 3}
+      propertyPath: m_Points.Array.data[1].y
+      value: 5.8712406
+      objectReference: {fileID: 0}
     - target: {fileID: 8080414886734892738, guid: 9fe8b70760a2cbb4c88c8aeeb6d838ba,
         type: 3}
       propertyPath: m_LocalRotation.z
@@ -233,6 +253,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vertical Inimigo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8080414886847190725, guid: 9fe8b70760a2cbb4c88c8aeeb6d838ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Inimigo2
       objectReference: {fileID: 0}
     - target: {fileID: 8080414886847190744, guid: 9fe8b70760a2cbb4c88c8aeeb6d838ba,
         type: 3}
@@ -3292,6 +3317,16 @@ PrefabInstance:
       value: "Tenho que confessar que essa \xE9 a ideia revolucion\xE1ria, mas extremamente
         perigosa."
       objectReference: {fileID: 0}
+    - target: {fileID: 6270670592919985189, guid: 07d1ae2ae64bd9745a0532f486b7977a,
+        type: 3}
+      propertyPath: imgHera
+      value: 
+      objectReference: {fileID: 1118512902}
+    - target: {fileID: 6270670592919985189, guid: 07d1ae2ae64bd9745a0532f486b7977a,
+        type: 3}
+      propertyPath: imgRobo
+      value: 
+      objectReference: {fileID: 1118512902}
     - target: {fileID: 6270670592919985191, guid: 07d1ae2ae64bd9745a0532f486b7977a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3430,10 +3465,35 @@ PrefabInstance:
       propertyPath: rotaPontos
       value: 
       objectReference: {fileID: 1855913564}
+    - target: {fileID: 2271514821883084168, guid: 9fe8b70760a2cbb4c88c8aeeb6d838ba,
+        type: 3}
+      propertyPath: m_Points.Array.data[2].x
+      value: 3.3132908
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271514821883084168, guid: 9fe8b70760a2cbb4c88c8aeeb6d838ba,
+        type: 3}
+      propertyPath: m_Points.Array.data[2].y
+      value: 6.1131334
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271514821883084168, guid: 9fe8b70760a2cbb4c88c8aeeb6d838ba,
+        type: 3}
+      propertyPath: m_Points.Array.data[1].y
+      value: 6.1297884
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271514821883084168, guid: 9fe8b70760a2cbb4c88c8aeeb6d838ba,
+        type: 3}
+      propertyPath: m_Points.Array.data[1].x
+      value: -3.008228
+      objectReference: {fileID: 0}
     - target: {fileID: 8080414886847190725, guid: 9fe8b70760a2cbb4c88c8aeeb6d838ba,
         type: 3}
       propertyPath: m_Name
       value: Vertical Inimigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8080414886847190725, guid: 9fe8b70760a2cbb4c88c8aeeb6d838ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Inimigo2
       objectReference: {fileID: 0}
     - target: {fileID: 8080414886847190744, guid: 9fe8b70760a2cbb4c88c8aeeb6d838ba,
         type: 3}

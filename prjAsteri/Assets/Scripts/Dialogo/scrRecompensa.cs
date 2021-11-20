@@ -11,7 +11,7 @@ public class scrRecompensa : MonoBehaviour
     [TextArea(3, 10)]
     public string[] dialogoLinhas;
     public string nome;
-    [SerializeField] scrControladorDialogo txtDialogo, txtNome, imgMorpheus; 
+    [SerializeField] scrControladorDialogo txtDialogo, txtNome, imgMorpheus, imgRobo; 
     //private string dialogo;
     public bool emContatoRecompensa = false; 
 
@@ -38,6 +38,7 @@ public class scrRecompensa : MonoBehaviour
                 txtDialogo.MostrarDialogo();
                 txtNome.MostrarNome(); 
                 imgMorpheus.MostrarMorpheus();
+                imgRobo.RetirarRobo();
                 
             }
 

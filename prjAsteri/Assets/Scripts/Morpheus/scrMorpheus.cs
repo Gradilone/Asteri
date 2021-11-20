@@ -75,19 +75,20 @@ public class scrMorpheus : MonoBehaviour
         if (quem.CompareTag("Inimigo1"))
         {
             rbMorpheus.transform.position = new Vector2(inicio1.transform.position.x, inicio1.transform.position.y);
+            Movimento.moveSpeed = 200;
             
         }
 
         if (quem.CompareTag("Inimigo2"))
         {
             rbMorpheus.transform.position = new Vector2(inicio2.transform.position.x, inicio2.transform.position.y);
-            
+            Movimento.moveSpeed = 200;
         }
 
         if (quem.CompareTag("Inimigo3"))
         {
             rbMorpheus.transform.position = new Vector2(inicio3.transform.position.x, inicio3.transform.position.y);
-            
+            Movimento.moveSpeed = 200;
         }
 
         if (quem.CompareTag("choque"))
