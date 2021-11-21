@@ -20,6 +20,7 @@ public class PegarItem : MonoBehaviour
     {
         if (emContato && Input.GetKeyDown(KeyCode.E))
         {
+            FindObjectOfType<scrAudio>().Play("Item");
             Debug.Log("Item Pego");
             for (int i = 0; i < inventario.slots.Length; i++)
             {
@@ -27,7 +28,7 @@ public class PegarItem : MonoBehaviour
                  {
                      inventario.taCheio[i] = true;
                      Instantiate(bntItem, inventario.slots[i].transform, false);
-                     Destroy(gameObject); 
+                     Destroy(gameObject);  
                      break;
                  }
             }

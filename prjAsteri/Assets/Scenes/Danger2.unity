@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -851,6 +851,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 836fb15c8be4e0745a39e7f7339879ea, type: 3}
+--- !u!114 &507536660 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 324050987050534289, guid: 836fb15c8be4e0745a39e7f7339879ea,
+    type: 3}
+  m_PrefabInstance: {fileID: 507536659}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dfe85b3fcad9ea4dbecd46922478437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &640142810
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,7 +947,7 @@ PrefabInstance:
     - target: {fileID: 895546902080018102, guid: f5504237344dcfd41b2a184448259759,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 895546902080018102, guid: f5504237344dcfd41b2a184448259759,
         type: 3}
@@ -1069,6 +1081,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &867997216 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8490291520747406140, guid: 836fb15c8be4e0745a39e7f7339879ea,
+    type: 3}
+  m_PrefabInstance: {fileID: 507536659}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664129f6272fa784a8587d671822d030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &883247301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,6 +1907,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a932c29e2c434f45825d46a56105685, type: 3}
+--- !u!1001 &948402836
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 708223286242674192, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: txtDialogo
+      value: 
+      objectReference: {fileID: 507536660}
+    - target: {fileID: 708223286242674192, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: dialogoLinhas.Array.data[0]
+      value: "Astes de sair, verifique se j\xE1 coletou o fio desta sala.\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 708223286242674193, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 708223286242674193, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 24.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 708223286242674193, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 708223286242674193, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 708223286242674193, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 708223286242674193, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 708223286242674193, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 708223286242674193, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 708223286242674193, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 708223286242674193, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 708223286242674193, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 708223286242674198, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: m_Name
+      value: Avisos Controle (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c4a771bafb54a641b45650fc9e2f70d, type: 3}
 --- !u!1 &951793929
 GameObject:
   m_ObjectHideFlags: 0
@@ -2854,7 +2957,7 @@ PrefabInstance:
     - target: {fileID: 1867063593905348660, guid: 41628639c1f8183489180581888b928e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 1867063593905348660, guid: 41628639c1f8183489180581888b928e,
         type: 3}
@@ -3250,7 +3353,7 @@ PrefabInstance:
     - target: {fileID: 6270670592919985189, guid: 07d1ae2ae64bd9745a0532f486b7977a,
         type: 3}
       propertyPath: dialogoLinhas.Array.data[5]
-      value: "Falta apena uma mente funcionando dentro do sistema que possa imaginar
+      value: "Falta apenas uma mente funcionando dentro do sistema que possa imaginar
         todos os cen\xE1rios da vida humana na Terra perfeitamente."
       objectReference: {fileID: 0}
     - target: {fileID: 6270670592919985189, guid: 07d1ae2ae64bd9745a0532f486b7977a,
@@ -3321,12 +3424,12 @@ PrefabInstance:
         type: 3}
       propertyPath: imgHera
       value: 
-      objectReference: {fileID: 1118512902}
+      objectReference: {fileID: 867997216}
     - target: {fileID: 6270670592919985189, guid: 07d1ae2ae64bd9745a0532f486b7977a,
         type: 3}
       propertyPath: imgRobo
       value: 
-      objectReference: {fileID: 1118512902}
+      objectReference: {fileID: 867997216}
     - target: {fileID: 6270670592919985191, guid: 07d1ae2ae64bd9745a0532f486b7977a,
         type: 3}
       propertyPath: m_LocalPosition.x

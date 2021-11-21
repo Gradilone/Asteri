@@ -8,10 +8,12 @@ public class scrVitoria : MonoBehaviour
     public static bool TemAmarelo = false;
     public static bool TemVerde = false;
     public static bool TemVermelho = false;
+    Animator anim;
 
     public GameObject UIObjetivos;
     void Start()
     {
+        anim = GetComponent<Animator>();
         UIObjetivos.SetActive(false);
     }
 
@@ -20,15 +22,13 @@ public class scrVitoria : MonoBehaviour
     {
         if (TemAzul == true && TemVerde == true && TemVermelho == true && TemAmarelo == true)
         {
+            anim.SetBool("ligou", true);
             Debug.Log("Venceu");
         }
         
         if (TemAzul == true || TemVerde == true || TemVermelho == true || TemAmarelo == true)
         {
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                UIObjetivos.SetActive(!UIObjetivos.activeSelf);
-            }
+            UIObjetivos.SetActive(true);
         }
     }
 }

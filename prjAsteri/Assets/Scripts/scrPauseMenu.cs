@@ -39,8 +39,9 @@ public class scrPauseMenu : MonoBehaviour
 
     }
 
-    public void CarregaMenu()
+    public void CarregaJogo()
     {
+        SceneManager.LoadScene("Cutscene");
 
     }
 

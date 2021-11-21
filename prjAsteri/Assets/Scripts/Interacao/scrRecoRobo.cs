@@ -15,6 +15,7 @@ public class scrRecoRobo : MonoBehaviour
     public bool emContatoRecompensa = false; 
 
 
+
    
     //public GameObject dBox;
 
@@ -47,6 +48,7 @@ public class scrRecoRobo : MonoBehaviour
                 if (inventario.taCheio[i] == false)
                 {
                     inventario.taCheio[i] = true;
+                    FindObjectOfType<scrAudio>().Play("Item");
                     Instantiate(bntItem, inventario.slots[i].transform, false);
                     Destroy(gameObject);
                     break;

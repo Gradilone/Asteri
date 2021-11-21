@@ -74,6 +74,7 @@ public class scrControladorDialogo : MonoBehaviour
 
     public void MostrarDialogo()
     {
+        FindObjectOfType<scrAudio>().Play("Dialogo");
         dialogoAtivo = true;
         dBox.SetActive(true);
         txtDialogo.text = "";
@@ -162,7 +163,7 @@ public class scrControladorDialogo : MonoBehaviour
     {
         bntContinuar.SetActive(false);
         
-        
+        FindObjectOfType<scrAudio>().Play("Dialogo");
         
         if (linhaAtual < dialogoLinhas.Length -1)
         {
@@ -176,9 +177,10 @@ public class scrControladorDialogo : MonoBehaviour
             AcabaDialogo();
            
         } 
-   
 
     }
+
+    
 
 
 }

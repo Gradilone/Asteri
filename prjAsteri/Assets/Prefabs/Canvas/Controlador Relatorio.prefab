@@ -50,6 +50,8 @@ MonoBehaviour:
   pnlMorpheus: {fileID: 0}
   imgHera: {fileID: 0}
   imgMorpheus: {fileID: 0}
+  pnlRobo: {fileID: 0}
+  imgRobo: {fileID: 0}
   nome: 
   dialogoAtivo: 0
   dialogoFim: 0

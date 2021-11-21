@@ -47,6 +47,7 @@ public class scrRecompensa : MonoBehaviour
                 if (inventario.taCheio[i] == false)
                 {
                     inventario.taCheio[i] = true;
+                    FindObjectOfType<scrAudio>().Play("Item");
                     Instantiate(bntItem, inventario.slots[i].transform, false);
                     Destroy(gameObject);
                     break;

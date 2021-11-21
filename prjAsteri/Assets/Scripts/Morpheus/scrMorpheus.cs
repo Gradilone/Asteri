@@ -76,6 +76,7 @@ public class scrMorpheus : MonoBehaviour
         {
             rbMorpheus.transform.position = new Vector2(inicio1.transform.position.x, inicio1.transform.position.y);
             Movimento.moveSpeed = 200;
+            FindObjectOfType<scrAudio>().Play("GameOver");
             
         }
 
@@ -83,16 +84,19 @@ public class scrMorpheus : MonoBehaviour
         {
             rbMorpheus.transform.position = new Vector2(inicio2.transform.position.x, inicio2.transform.position.y);
             Movimento.moveSpeed = 200;
+            FindObjectOfType<scrAudio>().Play("GameOver");
         }
 
         if (quem.CompareTag("Inimigo3"))
         {
             rbMorpheus.transform.position = new Vector2(inicio3.transform.position.x, inicio3.transform.position.y);
             Movimento.moveSpeed = 200;
+            FindObjectOfType<scrAudio>().Play("GameOver");
         }
 
         if (quem.CompareTag("choque"))
         {
+            FindObjectOfType<scrAudio>().Play("Choque");
             StartCoroutine(Choque());
             eletrico = true;
         }

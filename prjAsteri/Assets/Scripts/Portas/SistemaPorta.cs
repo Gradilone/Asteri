@@ -28,12 +28,21 @@ public class SistemaPorta : MonoBehaviour
 
     public static bool Bronze = false;
 
+    private scrControladorDialogo dialogo;
+
+    private void Start() 
+    {
+        dialogo = GetComponent<scrControladorDialogo>();
+        
+    }
+
   
     public void Usar()
     {
         if (Tocou)
         {
-            Debug.Log("Abriu"); 
+            Debug.Log("Abriu");
+            FindObjectOfType<scrAudio>().Play("Porta"); 
             DialogoAbriu = true;
             Destroy(gameObject);
         }
@@ -82,6 +91,7 @@ public class SistemaPorta : MonoBehaviour
         {
             Ouro = true;
             Destroy(gameObject);
+            
         }
     }
 

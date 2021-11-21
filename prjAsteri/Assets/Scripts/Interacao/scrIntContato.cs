@@ -7,7 +7,7 @@ public class scrIntContato : MonoBehaviour
     [TextArea(3, 10)]
     public string[] dialogoLinhas;
     public string nome;
-    [SerializeField] scrControladorDialogo txtDialogo, txtNome, imgMorpheus; 
+    [SerializeField] scrControladorDialogo txtDialogo, txtNome, imgMorpheus, imgHera, imgRobo; 
     //private string dialogo;
     [SerializeField] bool emContato = false; 
     
@@ -34,6 +34,8 @@ public class scrIntContato : MonoBehaviour
                 txtDialogo.MostrarDialogo();
                 txtNome.MostrarNome(); 
                 imgMorpheus.MostrarMorpheus();
+                imgRobo.RetirarRobo();
+                imgHera.RetirarHera();
                
             }
             

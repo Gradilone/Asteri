@@ -667,7 +667,8 @@ MonoBehaviour:
   dialogoLinhas:
   - "Ol\xE1 novamente Morpheus."
   - "O v\xEDrus que est\xE1 assolando os sistemas da nave j\xE1 est\xE1 atacando."
-  - "Preciso que voc\xEA reestabele\xE7a a energia nas outras \xE1reas da nave."
+  - "Preciso que voc\xEA reestabele\xE7a a energia nas outras \xE1reas da nave passando
+    pela porta \xE0 direita."
   - "Para isso dever\xE1 encontrar os quatro fios espalhados em cada se\xE7\xE3o."
   - "No entanto, tenha MUITO cuidado para n\xE3o ser pego."
   - "A \xE1rea est\xE1 infestada de rob\xF4s malignos infectados pelo v\xEDrus."
@@ -819,10 +820,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.0179408, y: 4.15853, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1039327569}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &357795398
 GameObject:
@@ -1256,6 +1256,91 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &514785783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 514785784}
+  - component: {fileID: 514785786}
+  - component: {fileID: 514785785}
+  m_Layer: 0
+  m_Name: Robo Dialogo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &514785784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514785783}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.0879407, y: 4.5785303, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &514785785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514785783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8517297c268ca8e48bd3b491eb1f4159, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bntItem: {fileID: 3229787699413322309, guid: 751f99c2ac054674c8ab905bead895b0, type: 3}
+  dialogoLinhas:
+  - "Ol\xE1 Morpheus est\xE1vamos te esperando."
+  - "A situa\xE7\xE3o est\xE1 cr\xEDtica!"
+  - "Hera te explicar\xE1 melhor o que est\xE1 acontecendo."
+  - "S\xF3 consegui resgatar este fio antes deles me perseguirem."
+  - Foi por pouco, quase fui pego.
+  - Espero que isso te ajude.
+  nome: "Robo Oper\xE1rio"
+  txtDialogo: {fileID: 428718081}
+  txtNome: {fileID: 428718081}
+  imgMorpheus: {fileID: 428718081}
+  imgRobo: {fileID: 428718081}
+  imgHera: {fileID: 428718081}
+  emContatoRecompensa: 0
+--- !u!61 &514785786
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514785783}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.049579084, y: -1.2190495}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7351819, y: 3.438099}
+  m_EdgeRadius: 0
 --- !u!1001 &630875569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1278,6 +1363,30 @@ PrefabInstance:
     - target: {fileID: 549562981, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
       propertyPath: playerPosition.y
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1039327571, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
+      propertyPath: txtDialogo
+      value: 
+      objectReference: {fileID: 428718081}
+    - target: {fileID: 1039327571, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
+      propertyPath: txtNome
+      value: 
+      objectReference: {fileID: 428718081}
+    - target: {fileID: 1039327571, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
+      propertyPath: imgMorpheus
+      value: 
+      objectReference: {fileID: 428718081}
+    - target: {fileID: 1039327571, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
+      propertyPath: imgRobo
+      value: 
+      objectReference: {fileID: 428718081}
+    - target: {fileID: 1039327571, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
+      propertyPath: imgHera
+      value: 
+      objectReference: {fileID: 428718081}
+    - target: {fileID: 1039327571, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
+      propertyPath: DiaReco
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3151622003918827844, guid: f57154eaf73a6004080e71aac6296e9f,
         type: 3}
@@ -1559,7 +1668,7 @@ PrefabInstance:
     - target: {fileID: 6270670592919985191, guid: 07d1ae2ae64bd9745a0532f486b7977a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6270670592919985191, guid: 07d1ae2ae64bd9745a0532f486b7977a,
         type: 3}
@@ -1694,7 +1803,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799689424}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.27, y: -6.18, z: 0}
+  m_LocalPosition: {x: -2.5, y: -0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1780,6 +1889,11 @@ PrefabInstance:
       propertyPath: inicio
       value: 
       objectReference: {fileID: 385794781}
+    - target: {fileID: 2793676625661300715, guid: f5504237344dcfd41b2a184448259759,
+        type: 3}
+      propertyPath: sounds.Array.data[5].pitch
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5504237344dcfd41b2a184448259759, type: 3}
 --- !u!1 &826300575
@@ -2065,7 +2179,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogoLinhas:
-  - "Est\xE1 bastante empoeirado"
+  - "Est\xE1 bastante empoeirado."
+  - "E trancado tamb\xE9m."
   nome: Morpheus
   txtDialogo: {fileID: 428718081}
   txtNome: {fileID: 428718081}
@@ -2223,91 +2338,6 @@ CapsuleCollider2D:
   m_Offset: {x: 1.0171947, y: -5.340964}
   m_Size: {x: 6.5763245, y: 5.396238}
   m_Direction: 1
---- !u!1 &1039327568
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1039327569}
-  - component: {fileID: 1039327570}
-  - component: {fileID: 1039327571}
-  m_Layer: 0
-  m_Name: Robo Dialogo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1039327569
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1039327568}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 335137500}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1039327570
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1039327568}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.049579084, y: -1.2190495}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.7351819, y: 3.438099}
-  m_EdgeRadius: 0
---- !u!114 &1039327571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1039327568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8517297c268ca8e48bd3b491eb1f4159, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bntItem: {fileID: 3229787699413322309, guid: 751f99c2ac054674c8ab905bead895b0, type: 3}
-  dialogoLinhas:
-  - "Ol\xE1 Morpheus est\xE1vamos te esperando."
-  - "A situa\xE7\xE3o est\xE1 cr\xEDtica!"
-  - "Hera te explicar\xE1 melhor o que est\xE1 acontecendo."
-  - "S\xF3 consegui resgatar este fio antes deles me perseguirem."
-  - Foi por pouco, quase fui pego.
-  - Espero que isso te ajude.
-  nome: "Robo Oper\xE1rio"
-  txtDialogo: {fileID: 428718081}
-  txtNome: {fileID: 428718081}
-  imgMorpheus: {fileID: 428718081}
-  imgRobo: {fileID: 428718081}
-  imgHera: {fileID: 428718081}
-  emContatoRecompensa: 0
 --- !u!1 &1208556732
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,6 +2478,36 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &1391847039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1391847040}
+  m_Layer: 0
+  m_Name: ObjetosDestuidos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1391847040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391847039}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.7307582, y: 3.258387, z: -5.6152344}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1478750907
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,42 +2624,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 549562981, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
-      propertyPath: carregandoCena
-      value: Quarto
-      objectReference: {fileID: 0}
-    - target: {fileID: 549562981, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
-      propertyPath: playerValor
+    - target: {fileID: 1039327571, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
+      propertyPath: txtDialogo
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 549562981, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
-      propertyPath: playerPosition.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 549562981, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
-      propertyPath: playerPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3151622003918827844, guid: f57154eaf73a6004080e71aac6296e9f,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -4.9581857
-      objectReference: {fileID: 0}
-    - target: {fileID: 3151622003918827844, guid: f57154eaf73a6004080e71aac6296e9f,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.2580633
-      objectReference: {fileID: 0}
-    - target: {fileID: 3151622003918827844, guid: f57154eaf73a6004080e71aac6296e9f,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -10.600108
-      objectReference: {fileID: 0}
-    - target: {fileID: 3151622003918827844, guid: f57154eaf73a6004080e71aac6296e9f,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.90018654
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 428718081}
+    - target: {fileID: 1039327571, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
+      propertyPath: txtNome
+      value: 
+      objectReference: {fileID: 428718081}
+    - target: {fileID: 1039327571, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
+      propertyPath: imgMorpheus
+      value: 
+      objectReference: {fileID: 428718081}
+    - target: {fileID: 1039327571, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
+      propertyPath: imgRobo
+      value: 
+      objectReference: {fileID: 428718081}
+    - target: {fileID: 1039327571, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
+      propertyPath: imgHera
+      value: 
+      objectReference: {fileID: 428718081}
     - target: {fileID: 3151622003918827845, guid: f57154eaf73a6004080e71aac6296e9f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2833,11 +2877,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogoLinhas:
-  - "Est\xE1 trancado\n"
+  - "Est\xE1 fechado."
+  - "H\xE1 um um leitor de c\xF3digos ali."
+  - Preciso achar um jeito de abrir para acessar as outras salas.
   nome: Morpheus
   txtDialogo: {fileID: 428718081}
   txtNome: {fileID: 428718081}
   imgMorpheus: {fileID: 428718081}
+  imgHera: {fileID: 428718081}
+  imgRobo: {fileID: 428718081}
   emContato: 0
 --- !u!61 &1626160860
 BoxCollider2D:
@@ -2873,7 +2921,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626160858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.2, y: -0.9, z: 0}
+  m_LocalPosition: {x: 8.96, y: -0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2981,6 +3029,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PortaComIa
+      objectReference: {fileID: 0}
+    - target: {fileID: 3151622003918827846, guid: f57154eaf73a6004080e71aac6296e9f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
@@ -3231,6 +3284,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b751cba7e6c3d4081cd5437042b36a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogoLinhas:
+  - Deu certo!
+  - Abriu!
+  nome: Morpheus
+  txtDialogo: {fileID: 428718081}
+  txtNome: {fileID: 428718081}
+  imgMorpheus: {fileID: 428718081}
+  imgHera: {fileID: 428718081}
+  imgRobo: {fileID: 428718081}
+  DiaAntes: {fileID: 1626160858}
 --- !u!61 &2030651857
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3265,11 +3328,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030651855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.29, y: -0.9, z: 0}
+  m_LocalPosition: {x: 10.68, y: -0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2030651859
 BoxCollider2D:
@@ -3297,83 +3360,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.909852, y: 4.554713}
   m_EdgeRadius: 0
---- !u!1 &2038283776
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2038283779}
-  - component: {fileID: 2038283778}
-  - component: {fileID: 2038283777}
-  m_Layer: 0
-  m_Name: Abriu
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2038283777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2038283776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51200e9d5d6d80645b56c32a91d1e626, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogoLinhas:
-  - Abriu!
-  nome: Morpheus
-  txtDialogo: {fileID: 428718081}
-  txtNome: {fileID: 428718081}
-  imgMorpheus: {fileID: 428718081}
-  emContato: 0
---- !u!61 &2038283778
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2038283776}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.08566904, y: 0.05046177}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.44466305, y: 4.532259}
-  m_EdgeRadius: 0
---- !u!4 &2038283779
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2038283776}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.75, y: -0.9, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2128379166
 GameObject:
   m_ObjectHideFlags: 0

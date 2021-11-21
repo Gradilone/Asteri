@@ -45,7 +45,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02732706, y: 0.4430889}
+  m_Offset: {x: -4.9581857, y: -10.600108}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -56,7 +56,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8416739, y: 2.869952}
+  m_Size: {x: 2.2580633, y: 0.90018654}
   m_EdgeRadius: 0
 --- !u!114 &549562981
 MonoBehaviour:
@@ -70,6 +70,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbadf7f5056dcb042a01645b1deb4753, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carregandoCena: "Comunica\xE7\xE3o com a Ia"
-  playerPosition: {x: 4.32, y: -0.93}
-  playerValor: {fileID: 11400000, guid: a0cce500b2206664f8f296c2bff0c1a3, type: 2}
+  carregandoCena: Quarto
+  inicial: 
+  playerPosition: {x: 5, y: 0, z: 0}

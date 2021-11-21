@@ -10,6 +10,6 @@ public class scrSentinela : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sentinela.transform.Rotate(new Vector3 (0f,0f,1f), velorotacao * Time.deltaTime, Space.Self);
+        sentinela.transform.Rotate(new Vector3 (0f,0f,-1f), velorotacao * Time.deltaTime, Space.Self);
     }
 }

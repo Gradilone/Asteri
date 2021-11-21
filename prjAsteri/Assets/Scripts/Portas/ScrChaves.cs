@@ -40,7 +40,7 @@ public class ScrChaves : MonoBehaviour
                 }
                 else
                 {
-                   txtDialogo.AcabaDialogo();
+                   txtDialogo.AcabaDialogo(); 
                 }
                 
             }
@@ -58,8 +58,6 @@ public class ScrChaves : MonoBehaviour
             }
 
         }
-  
-            
     }
             
     void OnTriggerEnter2D(Collider2D quem)
@@ -67,8 +65,6 @@ public class ScrChaves : MonoBehaviour
         if (quem.CompareTag("Player"))
         {
             SistemaPorta.OuroTocou = true;
-            SistemaPorta.PrataTocou = true;
-            SistemaPorta.BronzeTocou = true;
            
         } 
     }
@@ -78,8 +74,6 @@ public class ScrChaves : MonoBehaviour
         if (quem.CompareTag("Player"))
         {
             SistemaPorta.OuroTocou = false;
-            SistemaPorta.PrataTocou = false;
-            SistemaPorta.BronzeTocou = false;
         } 
     }
 }
