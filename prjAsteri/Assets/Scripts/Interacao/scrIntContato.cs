@@ -10,7 +10,18 @@ public class scrIntContato : MonoBehaviour
     [SerializeField] scrControladorDialogo txtDialogo, txtNome, imgMorpheus, imgHera, imgRobo; 
     //private string dialogo;
     [SerializeField] bool emContato = false; 
+    [SerializeField]bool isOpen=false;
+    public scrItemManager Manager;
     
+    private void Awake() 
+    {
+        Manager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<scrItemManager>();
+        isOpen=Manager.portaAbriu;
+        if (isOpen)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {

@@ -7,7 +7,17 @@ public class scrItemManager : MonoBehaviour
 {
     [SerializeField] public List<string> itensInv = new List<string>();
 
+    [SerializeField] public bool portaAbriu=false;
+
     public static scrItemManager Instance { get; private set; }
+
+    public bool FioAmarelo=false;
+
+    public bool FioAzul=false;
+
+    public bool FioVermelho=false;
+
+    public bool FioVerde=false;
 
     private void Awake()
     {

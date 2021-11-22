@@ -28,11 +28,24 @@ public class SistemaPorta : MonoBehaviour
 
     public static bool Bronze = false;
 
+    public scrItemManager Manager;
+
     private scrControladorDialogo dialogo;
+
+    [SerializeField]bool isOpen=false;
 
     private void Start() 
     {
+        Manager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<scrItemManager>();
+
         dialogo = GetComponent<scrControladorDialogo>();
+
+        isOpen=Manager.portaAbriu;
+
+        if (isOpen)
+        {
+            Destroy(gameObject);
+        }
         
     }
 
@@ -40,7 +53,8 @@ public class SistemaPorta : MonoBehaviour
     public void Usar()
     {
         if (Tocou)
-        {
+        { 
+            Manager.portaAbriu=true;
             Debug.Log("Abriu");
             FindObjectOfType<scrAudio>().Play("Porta"); 
             DialogoAbriu = true;

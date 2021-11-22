@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -167,7 +167,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &59165379
 Transform:
   m_ObjectHideFlags: 0
@@ -2775,6 +2775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IconAmarelo: {fileID: 1543738803568049964, guid: acbc3000f2565394b824f44d516c5973,
     type: 3}
+  Manager: {fileID: 0}
 --- !u!61 &1266227867
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3153,6 +3154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IconVerde: {fileID: 1658002447472113946, guid: 29f63b1aee70b414eb7d276b237a7467,
     type: 3}
+  Manager: {fileID: 0}
 --- !u!61 &1355770189
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3375,6 +3377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IconVermelho: {fileID: 7829467697872901818, guid: 5487fc7ac8da19d45af0162044374c62,
     type: 3}
+  Manager: {fileID: 0}
 --- !u!61 &1425556888
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4209,6 +4212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IconAzul: {fileID: 1877433133728725783, guid: 2e71ef126deee6d4f8a987fc927935ad,
     type: 3}
+  Manager: {fileID: 0}
 --- !u!61 &1981115966
 BoxCollider2D:
   m_ObjectHideFlags: 0

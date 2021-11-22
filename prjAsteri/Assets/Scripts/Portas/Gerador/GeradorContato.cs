@@ -7,10 +7,12 @@ public class GeradorContato : MonoBehaviour
     ObjInventario obj_inventario;
     
     public GameObject IconAmarelo;
-
+    public scrItemManager Manager;
 
      private void Start() {
         obj_inventario = GameObject.FindGameObjectWithTag("Player").GetComponent<ObjInventario>();
+        Manager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<scrItemManager>();
+
     }
     private void Update() 
     {

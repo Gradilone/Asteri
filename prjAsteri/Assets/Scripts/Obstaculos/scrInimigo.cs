@@ -11,7 +11,7 @@ public class scrInimigo : MonoBehaviour
 
     public bool emContatoB = false;
     public bool emContatoA = false;
-    nimator anim;
+    Animator anim;
     [SerializeField] Transform posicaoRayCast;
     [SerializeField] float disObs = 2.6f;
     [SerializeField] LayerMask camadaEsquerda;

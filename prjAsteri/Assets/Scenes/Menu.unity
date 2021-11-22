@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fcdaa0ae74822549a6e96e6428e4212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cenaDesejada: ComIa
+  cenaDesejada: Cutscene
 --- !u!1 &1162298662
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,18 @@ public class PortaContato : MonoBehaviour
     [SerializeField] scrControladorDialogo txtDialogo, txtNome, imgMorpheus, imgHera, imgRobo; 
 
     public GameObject DiaAntes;
+    [SerializeField]bool isOpen=false;
+    public scrItemManager Manager;
 
+    private void Awake() 
+    {
+        Manager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<scrItemManager>();
+        isOpen=Manager.portaAbriu;
+        if (isOpen)
+        {
+            Destroy(gameObject);
+        }
+    }
     
     private void Update() 
     {

@@ -7,15 +7,22 @@ public class GeraVerde : MonoBehaviour
     ObjInventario obj_inventario;
     
     public GameObject IconVerde;
-
+    public scrItemManager Manager;
 
      private void Start() {
         obj_inventario = GameObject.FindGameObjectWithTag("Player").GetComponent<ObjInventario>();
+        Manager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<scrItemManager>();
+        if (Manager.FioVerde)
+        {
+            scrVitoria.TemVerde = true;
+            Destroy(gameObject);
+        }
     }
     
     private void Update() {
         if (SistemaPorta.Verde)
         {
+            Manager.FioVerde=true;
             Instantiate(IconVerde, obj_inventario.Objetivos[2].transform, false);
             scrVitoria.TemVerde = true;
             Destroy(gameObject);

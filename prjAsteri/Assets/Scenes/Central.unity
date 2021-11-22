@@ -1321,6 +1321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8517297c268ca8e48bd3b491eb1f4159, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Manager: {fileID: 0}
   bntItem: {fileID: 3229787699413322309, guid: 751f99c2ac054674c8ab905bead895b0, type: 3}
   dialogoLinhas:
   - "Ol\xE1 Morpheus est\xE1vamos te esperando."
@@ -2898,6 +2899,8 @@ MonoBehaviour:
   imgHera: {fileID: 428718081}
   imgRobo: {fileID: 428718081}
   emContato: 0
+  isOpen: 0
+  Manager: {fileID: 0}
 --- !u!61 &1626160860
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3305,6 +3308,8 @@ MonoBehaviour:
   imgHera: {fileID: 428718081}
   imgRobo: {fileID: 428718081}
   DiaAntes: {fileID: 1626160858}
+  isOpen: 0
+  Manager: {fileID: 0}
 --- !u!61 &2030651857
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3318,7 +3323,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.09256315, y: 0.05046177}
+  m_Offset: {x: -0.14267874, y: 0.05046177}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3329,7 +3334,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.51640224, y: 4.532259}
+  m_Size: {x: 0.986886, y: 4.532259}
   m_EdgeRadius: 0
 --- !u!4 &2030651858
 Transform:
@@ -3358,7 +3363,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15594721, y: 0.054267168}
+  m_Offset: {x: -0.80095005, y: 0.054267168}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3369,7 +3374,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.909852, y: 4.554713}
+  m_Size: {x: 2.1998577, y: 4.554713}
   m_EdgeRadius: 0
 --- !u!1 &2128379166
 GameObject:
