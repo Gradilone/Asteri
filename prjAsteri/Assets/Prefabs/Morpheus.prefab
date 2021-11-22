@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &634042222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 634042224}
+  - component: {fileID: 634042223}
+  m_Layer: 0
+  m_Name: ItemManager
+  m_TagString: ItemManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &634042224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634042222}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.944811, y: -0.80389786, z: -72.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 895546902080018102}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &634042223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634042222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5b047fb8d24424a80fb9e617d65673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itensInv: []
 --- !u!1 &636660760
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,7 +819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 1.2, y: -7.3999634}
+  m_AnchoredPosition: {x: 1.2, y: -7.4000244}
   m_SizeDelta: {x: 39.4, y: 38.6}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1557600639
@@ -1100,6 +1144,7 @@ Transform:
   - {fileID: 1942140807851194597}
   - {fileID: 812911435}
   - {fileID: 2793676625661300716}
+  - {fileID: 634042224}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1649,7 +1694,7 @@ PrefabInstance:
     - target: {fileID: 1264447956465247793, guid: 9537ac16c423f1d46a7e32fe3a801267,
         type: 3}
       propertyPath: m_Name
-      value: AudioManeger
+      value: AudioManager
       objectReference: {fileID: 0}
     - target: {fileID: 1264447956465247795, guid: 9537ac16c423f1d46a7e32fe3a801267,
         type: 3}
@@ -1694,7 +1739,7 @@ PrefabInstance:
     - target: {fileID: 1264447956465247795, guid: 9537ac16c423f1d46a7e32fe3a801267,
         type: 3}
       propertyPath: sounds.Array.data[3].volume
-      value: 0.05
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1264447956465247795, guid: 9537ac16c423f1d46a7e32fe3a801267,
         type: 3}
@@ -1734,7 +1779,7 @@ PrefabInstance:
     - target: {fileID: 1264447956465247795, guid: 9537ac16c423f1d46a7e32fe3a801267,
         type: 3}
       propertyPath: sounds.Array.data[5].volume
-      value: 0.2
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 1264447956465247795, guid: 9537ac16c423f1d46a7e32fe3a801267,
         type: 3}

@@ -19,6 +19,8 @@ TagManager:
   - Inimigo3
   - choque
   - Dialogo
+  - ItemManager
+  - Item
   layers:
   - Default
   - TransparentFX

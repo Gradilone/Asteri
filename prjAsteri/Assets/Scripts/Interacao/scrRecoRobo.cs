@@ -5,6 +5,7 @@ using UnityEngine;
 public class scrRecoRobo : MonoBehaviour
 {
    private Inventario inventario;
+   public scrItemManager Manager;
     public GameObject bntItem;
     
     [TextArea(3, 10)]
@@ -22,6 +23,13 @@ public class scrRecoRobo : MonoBehaviour
     void Start() 
     {
         inventario = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventario>();
+
+        Manager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<scrItemManager>();
+
+        if (Manager.CompareName("fioRobo"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Update() 
@@ -50,6 +58,7 @@ public class scrRecoRobo : MonoBehaviour
                     inventario.taCheio[i] = true;
                     FindObjectOfType<scrAudio>().Play("Item");
                     Instantiate(bntItem, inventario.slots[i].transform, false);
+                    Manager.itensInv.Add("fioRobo");
                     Destroy(gameObject);
                     break;
                     

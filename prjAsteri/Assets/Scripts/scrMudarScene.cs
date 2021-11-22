@@ -1,42 +1,45 @@
-﻿using System.Collections;
+﻿using System.Diagnostics;
+using System.Security.Cryptography;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class scrMudarScene : MonoBehaviour
 {
-    [SerializeField] string carregandoCena;
-    [SerializeField] string inicial;
-    [SerializeField] Vector3 playerPosition;
+    [SerializeField] public string carregandoCena;
+    [SerializeField] public string inicial;
+    [SerializeField] public Vector3 playerPosition;
 
 
-    Transform playerValor; 
+    GameObject playerValor; 
     
-    string atual;
-    bool trigger=false;
+    public string atual;
+    public bool trigger=false;
 
     void Awake()
     {
+
+
         inicial = SceneManager.GetActiveScene().name;
         
-        Debug.Log(playerPosition.x+" "+playerPosition.y);
+        UnityEngine.Debug.Log(playerPosition.x+" "+playerPosition.y);
         
-        playerValor=GameObject.FindWithTag("Player").transform;
+        playerValor=GameObject.FindWithTag("Player");
         
         DontDestroyOnLoad(gameObject);
     }
 
-    private void Update()
+    void Update()
     {
         atual=SceneManager.GetActiveScene().name;
-        if(atual != inicial && atual == carregandoCena && !trigger)
-        {
-            playerValor.position = new Vector3(playerPosition.x,playerPosition.y,0f);
+        // if(atual != inicial && atual == carregandoCena && !trigger)
+        // {
+        //     playerValor.transform.position = new Vector3(playerPosition.x,playerPosition.y,0f);
 
-            trigger=true;
-            
-        }
-        else if (atual != inicial)
+        //     trigger=true;
+        // }
+        if (atual != inicial && atual != "Loading" && trigger==false)
         {
             Destroy(gameObject);
         }
@@ -46,13 +49,23 @@ public class scrMudarScene : MonoBehaviour
     {
         if (other.CompareTag("Player") && !other.isTrigger)
         {
-            SceneManager.LoadScene(carregandoCena); 
-
-            GetComponent<Collider2D>().enabled = false;
-
-            Debug.Log(playerPosition.x+" "+playerPosition.y);
-            //Load();
+            playerValor.GetComponentInChildren<scrAudio>().Play("Porta");
+            trigger=true;
+            SceneManager.LoadScene("Loading");
+            playerValor.transform.position = new Vector3(playerPosition.x,playerPosition.y,0f);
+            playerValor.SetActive(false);
+            
+            Invoke("Atraso",1f);     
+            
         }
         
+    }
+
+    void Atraso()
+    {
+        AsyncOperation operacao=SceneManager.LoadSceneAsync(carregandoCena);
+        playerValor.SetActive(true);
+        
+        trigger=false;
     }
 }

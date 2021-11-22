@@ -11,13 +11,14 @@ public class scrInimigo : MonoBehaviour
 
     public bool emContatoB = false;
     public bool emContatoA = false;
-
+    nimator anim;
     [SerializeField] Transform posicaoRayCast;
     [SerializeField] float disObs = 2.6f;
     [SerializeField] LayerMask camadaEsquerda;
     [SerializeField] LayerMask camadaDireita;
 
     private void Start() {
+        anim=GetComponent<Animator>();
         Vector2[] pontos = new Vector2[rotaPontos.childCount];
         for (int i = 0; i < pontos.Length; i++)
         {

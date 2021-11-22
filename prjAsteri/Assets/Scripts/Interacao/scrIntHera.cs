@@ -10,6 +10,7 @@ public class scrIntHera : MonoBehaviour
     [SerializeField] scrControladorDialogo txtDialogo, txtNome, imgHera, imgMorpheus, imgRobo; 
     //private string dialogo;
     public bool emContato = false; 
+    Animator anim;
 
 
    
@@ -17,11 +18,19 @@ public class scrIntHera : MonoBehaviour
 
     void Start() 
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     private void Update() 
     {
+        if (txtDialogo.dialogoAtivo && emContato)
+        {
+            anim.SetBool("isOn", true);
+        }
+        else
+        {
+            anim.SetBool("isOn", false);
+        }
         if (emContato && Input.GetKeyDown(KeyCode.E)) 
         {
             //txtDialogo.MostrarBox(dialogo); 
