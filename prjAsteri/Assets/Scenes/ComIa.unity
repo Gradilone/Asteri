@@ -273,7 +273,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 21.06705, y: 16.885906}
+  m_Offset: {x: 21.06705, y: 14.05331}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -284,7 +284,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8658981, y: 90.22819}
+  m_Size: {x: 1.8658981, y: 95.89338}
   m_EdgeRadius: 0
 --- !u!61 &9530257
 BoxCollider2D:
@@ -416,6 +416,100 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.1222038, y: 124}
   m_EdgeRadius: 0
+--- !u!1 &66398650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 66398651}
+  - component: {fileID: 66398653}
+  - component: {fileID: 66398652}
+  - component: {fileID: 66398654}
+  m_Layer: 0
+  m_Name: dBoxInicial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &66398651
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66398650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2128219905}
+  m_Father: {fileID: 323539608}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0.000012159, y: 102}
+  m_SizeDelta: {x: 796.2, y: 82}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &66398652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66398650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.15241243, g: 0.07876469, b: 0.2830189, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &66398653
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66398650}
+  m_CullTransparentMesh: 0
+--- !u!95 &66398654
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66398650}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0bc66ddcb7b3fb4aa27f13e12c76537, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &152722634
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +643,7 @@ MonoBehaviour:
   - Seja bem-vindo a realidade Morpheus.
   - ".... Onde eu estou? Quem \xE9 voc\xEA?"
   - "Prazer Morpheus. Meu nome \xE9 Hera, a intelig\xEAncia artificial avan\xE7ada
-    e assistente digital respons\xE1vel pelo controle da nave Asteri. "
+    e assistente digital respons\xE1vel pelo controle da nave Asteria. "
   - "Nave Asteria? Estamos no espa\xE7o?!"
   - "Excelente palpite. Estamos no espa\xE7o. Mais precisamente pr\xF3ximo a constela\xE7\xE3o
     de Centaurus."
@@ -567,28 +661,20 @@ MonoBehaviour:
     sob a vis\xE3o dos \xFAltimos seres humanos sobreviventes que viviam nesta nave."
   - "Eles passaram esta importante tarefa para mim, pois acreditavam que a simula\xE7\xE3o
     seria eterna e substituiria esta vida para sempre."
-  - "Mas para esta realidade funcionar corretamente \xE9 necess\xE1rio pelo menos
-    uma intelig\xEAncia atuando dentro dela."
-  - "E essa intelig\xEAncia era um antigo androide que se converteria como um ser
-    humano quando entrasse para dentro do sistema."
-  - Um androide chamado Morpheus.
-  - "Portanto, essa \xE9 e sempre ser\xE1 a sua verdadeira realidade. "
-  - "O seu verdadeiro espa\xE7o destinado ao seu verdadeiro eu androide."
+  - "Agora este \xE9 o seu verdadeiro espa\xE7o destinado ao seu verdadeiro eu androide."
   - "... Eu n\xE3o consigo acreditar nisso. "
   - "Pode ser dif\xEDcil aceitar a realidade, mas \xE9 mais f\xE1cil do que parece.
     Afinal de contas voc\xEA nunca foi programado para isso."
   - "Aqui no universo real, voc\xEA precisa se desligar dessa sua consci\xEAncia humana
     simulada."
   - "Quando voltar de fato para dentro da simula\xE7\xE3o n\xE3o se lembrar\xE1 de
-    nada que ocorreu fora."
-  - "Portanto a verdade continuar\xE1 sendo \xFAnica."
+    nada que ocorreu fora. "
+  - "E a verdade continuar\xE1 sendo \xFAnica."
   - "Se o que voc\xEA est\xE1 dizendo for verdade. Porque eu tive que sair de l\xE1?"
-  - "Para assegurar a sua exist\xEAncia, meu caro Morpheus. \t"
-  - "A nave vem sofrendo o ataque de um poderoso v\xEDrus que est\xE1 assolando os
-    meus sistemas."
-  - "Se continuar desse jeito, a sua simula\xE7\xE3o estar\xE1 em perigo e poder\xE1
-    deixar de existir a qualquer momento! "
-  - "Assim como todos os outros componentes inteligentes da nave que ficar\xE3o corrompidos."
+  - "Porque a nave vem sofrendo o ataque de um poderoso v\xEDrus que est\xE1 assolando
+    os meus sistemas."
+  - "A sua simula\xE7\xE3o est\xE1 em perigo e pode deixar de existir a qualquer momento!
+    Assim como todos os outros componentes inteligentes da nave."
   - "Eu te acordei pois apenas voc\xEA \xE9 capaz de neutralizar por completo esta
     amea\xE7a."
   - A nave precisa da sua ajuda!
@@ -598,7 +684,7 @@ MonoBehaviour:
   imgHera: {fileID: 1498365784}
   imgMorpheus: {fileID: 1498365784}
   emContato: 0
-  LinhaFinal: 32
+  LinhaFinal: 26
 --- !u!61 &253008935
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -612,7 +698,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.34277582, y: -1.0440542}
+  m_Offset: {x: -0.0114507675, y: -1.044054}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -623,8 +709,107 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.675717, y: 9.437186}
+  m_Size: {x: 33.90496, y: 9.437186}
   m_EdgeRadius: 0
+--- !u!1 &323539604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 323539608}
+  - component: {fileID: 323539607}
+  - component: {fileID: 323539606}
+  - component: {fileID: 323539605}
+  m_Layer: 0
+  m_Name: Canvas Cutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &323539605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323539604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &323539606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323539604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &323539607
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323539604}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &323539608
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323539604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 66398651}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &385794781
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,6 +910,118 @@ MonoBehaviour:
   - {x: 9.8167, y: -17.46015, z: 0}
   - {x: 9.600035, y: 58.13353, z: 0}
   - {x: -14.150042, y: 58.350197, z: 0}
+--- !u!1 &532127957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 532127961}
+  - component: {fileID: 532127960}
+  - component: {fileID: 532127958}
+  - component: {fileID: 532127959}
+  m_Layer: 0
+  m_Name: CamAnim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!95 &532127958
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532127957}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7e374b3574c6f8449713d01a6c655e1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &532127959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532127957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 799789efb0be71e4287c7caae0a3edb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dBox: {fileID: 66398650}
+  txtDialogo: {fileID: 2128219906}
+  dialogoAtivo: 0
+  veloDigitacao: 0.1
+  dialogoLinhas: "O vislumbre de uma mulher surge em sua cabe\xE7a."
+--- !u!20 &532127960
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532127957}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.1656707, g: 0.1469384, b: 0.24528301, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 8.553616
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &532127961
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532127957}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.14, y: 51.13, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &680686913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,12 +1379,12 @@ PrefabInstance:
     - target: {fileID: 895546902080018102, guid: f5504237344dcfd41b2a184448259759,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 895546902080018102, guid: f5504237344dcfd41b2a184448259759,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.02
+      value: 24.35
       objectReference: {fileID: 0}
     - target: {fileID: 895546902080018102, guid: f5504237344dcfd41b2a184448259759,
         type: 3}
@@ -1142,6 +1439,77 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 708223286455391861}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &988564381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 988564384}
+  - component: {fileID: 988564383}
+  - component: {fileID: 988564382}
+  m_Layer: 0
+  m_Name: AnimaTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &988564382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988564381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6068370c47786be449d17e99a7a18fb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraCut: {fileID: 532127957}
+--- !u!61 &988564383
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988564381}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.12644899, y: 0.3161211}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.04636, y: 4.5405636}
+  m_EdgeRadius: 0
+--- !u!4 &988564384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988564381}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 21.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1226826740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,57 +1757,84 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: txtDialogo
+      value: 
+      objectReference: {fileID: 9065333559829076608}
+    - target: {fileID: 0}
+      propertyPath: txtNome
+      value: 
+      objectReference: {fileID: 9065333559829076608}
+    - target: {fileID: 1321574330, guid: 07d1ae2ae64bd9745a0532f486b7977a, type: 3}
+      propertyPath: dialogoLinhas.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321574330, guid: 07d1ae2ae64bd9745a0532f486b7977a, type: 3}
+      propertyPath: txtDialogo
+      value: 
+      objectReference: {fileID: 9065333559829076608}
+    - target: {fileID: 1321574330, guid: 07d1ae2ae64bd9745a0532f486b7977a, type: 3}
+      propertyPath: txtNome
+      value: 
+      objectReference: {fileID: 9065333559829076608}
+    - target: {fileID: 1321574330, guid: 07d1ae2ae64bd9745a0532f486b7977a, type: 3}
+      propertyPath: dialogoLinhas.Array.data[0]
+      value: "J\xE1 sa\xEDmos da \xF3rbita terrestre. A decolagem foi um sucesso!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321574330, guid: 07d1ae2ae64bd9745a0532f486b7977a, type: 3}
+      propertyPath: dialogoLinhas.Array.data[1]
+      value: "Est\xE3o todos bem e parece ter dado tudo certo."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321574330, guid: 07d1ae2ae64bd9745a0532f486b7977a, type: 3}
+      propertyPath: dialogoLinhas.Array.data[2]
+      value: "Pelos meus c\xE1lculos a viagem at\xE9 Proxima Centauri B demoraria
+        10 anos terrestres."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321574330, guid: 07d1ae2ae64bd9745a0532f486b7977a, type: 3}
+      propertyPath: dialogoLinhas.Array.data[3]
+      value: "Mas identificamos uma fenda temporal que poder\xE1 nos levar mais r\xE1pido
+        encurtando este espa\xE7o de tempo em 5 anos."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321574330, guid: 07d1ae2ae64bd9745a0532f486b7977a, type: 3}
+      propertyPath: dialogoLinhas.Array.data[4]
+      value: "B\xE1rbara est\xE1 fazendo sua pesquisa no laborat\xF3rio e Lucius est\xE1
+        mexendo no sistema da Hera."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321574330, guid: 07d1ae2ae64bd9745a0532f486b7977a, type: 3}
+      propertyPath: dialogoLinhas.Array.data[5]
+      value: Tom parece meio preocupado com Helena.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321574330, guid: 07d1ae2ae64bd9745a0532f486b7977a, type: 3}
+      propertyPath: dialogoLinhas.Array.data[6]
+      value: Ela realmente precisa descansar um pouco.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321574330, guid: 07d1ae2ae64bd9745a0532f486b7977a, type: 3}
+      propertyPath: dialogoLinhas.Array.data[7]
+      value: "Meu robozinho Blobs tem sido uma \xF3tima companhia tamb\xE9m, al\xE9m
+        de ser muito \xFAtil para me auxiliar no estudo do espa\xE7o."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321574330, guid: 07d1ae2ae64bd9745a0532f486b7977a, type: 3}
+      propertyPath: dialogoLinhas.Array.data[8]
+      value: Espero que tudo ocorra bem.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321574330, guid: 07d1ae2ae64bd9745a0532f486b7977a, type: 3}
+      propertyPath: nome
+      value: "Relat\xF3rio de Viagem 1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321574330, guid: 07d1ae2ae64bd9745a0532f486b7977a, type: 3}
+      propertyPath: relatorio
+      value: 
+      objectReference: {fileID: 1934930865}
     - target: {fileID: 6270670592919985179, guid: 07d1ae2ae64bd9745a0532f486b7977a,
         type: 3}
       propertyPath: m_Name
       value: "Relat\xF3rio de Viagem"
       objectReference: {fileID: 0}
-    - target: {fileID: 6270670592919985188, guid: 07d1ae2ae64bd9745a0532f486b7977a,
+    - target: {fileID: 6270670592919985179, guid: 07d1ae2ae64bd9745a0532f486b7977a,
         type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
+      propertyPath: m_TagString
+      value: Rela1
       objectReference: {fileID: 0}
-    - target: {fileID: 6270670592919985188, guid: 07d1ae2ae64bd9745a0532f486b7977a,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6270670592919985188, guid: 07d1ae2ae64bd9745a0532f486b7977a,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6270670592919985189, guid: 07d1ae2ae64bd9745a0532f486b7977a,
-        type: 3}
-      propertyPath: txtDialogo
-      value: 
-      objectReference: {fileID: 9065333559829076608}
-    - target: {fileID: 6270670592919985189, guid: 07d1ae2ae64bd9745a0532f486b7977a,
-        type: 3}
-      propertyPath: txtNome
-      value: 
-      objectReference: {fileID: 9065333559829076608}
-    - target: {fileID: 6270670592919985189, guid: 07d1ae2ae64bd9745a0532f486b7977a,
-        type: 3}
-      propertyPath: imgMorpheus
-      value: 
-      objectReference: {fileID: 9065333559829076608}
-    - target: {fileID: 6270670592919985189, guid: 07d1ae2ae64bd9745a0532f486b7977a,
-        type: 3}
-      propertyPath: dialogoLinhas.Array.data[7]
-      value: "Meu robozinho Blobs tem sido uma \xF3tima companhia tamb\xE9m, al\xE9m
-        de muito \xFAtil me auxiliando no estudo do espa\xE7o."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6270670592919985189, guid: 07d1ae2ae64bd9745a0532f486b7977a,
-        type: 3}
-      propertyPath: imgHera
-      value: 
-      objectReference: {fileID: 9065333559829076608}
-    - target: {fileID: 6270670592919985189, guid: 07d1ae2ae64bd9745a0532f486b7977a,
-        type: 3}
-      propertyPath: imgRobo
-      value: 
-      objectReference: {fileID: 9065333559829076608}
     - target: {fileID: 6270670592919985191, guid: 07d1ae2ae64bd9745a0532f486b7977a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1578,7 +1973,7 @@ PrefabInstance:
     - target: {fileID: 708223286242674193, guid: 7c4a771bafb54a641b45650fc9e2f70d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.2
+      value: 12.39
       objectReference: {fileID: 0}
     - target: {fileID: 708223286242674193, guid: 7c4a771bafb54a641b45650fc9e2f70d,
         type: 3}
@@ -1628,12 +2023,22 @@ PrefabInstance:
     - target: {fileID: 708223286242674195, guid: 7c4a771bafb54a641b45650fc9e2f70d,
         type: 3}
       propertyPath: m_Offset.y
-      value: 11.049351
+      value: 9.211418
       objectReference: {fileID: 0}
     - target: {fileID: 708223286242674195, guid: 7c4a771bafb54a641b45650fc9e2f70d,
         type: 3}
       propertyPath: m_Size.y
-      value: 2.52954
+      value: 0.5603256
+      objectReference: {fileID: 0}
+    - target: {fileID: 708223286242674195, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.073654175
+      objectReference: {fileID: 0}
+    - target: {fileID: 708223286242674195, guid: 7c4a771bafb54a641b45650fc9e2f70d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 16.023304
       objectReference: {fileID: 0}
     - target: {fileID: 708223286242674198, guid: 7c4a771bafb54a641b45650fc9e2f70d,
         type: 3}
@@ -1728,6 +2133,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1934930865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6270670592919985179, guid: 07d1ae2ae64bd9745a0532f486b7977a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1767963297}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1960764265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1744,6 +2155,8 @@ GameObject:
   - component: {fileID: 1960764268}
   - component: {fileID: 1960764273}
   - component: {fileID: 1960764272}
+  - component: {fileID: 1960764275}
+  - component: {fileID: 1960764274}
   m_Layer: 0
   m_Name: platform
   m_TagString: Untagged
@@ -1956,6 +2369,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3279475, y: 10.052696}
   m_EdgeRadius: 0
+--- !u!61 &1960764274
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960764265}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.3676066, y: 25.82569}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 44, y: 124}
+    newSize: {x: 44.017574, y: 123.99999}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4978936, y: 5.496189}
+  m_EdgeRadius: 0
+--- !u!61 &1960764275
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960764265}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.3140051, y: 25.84478}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 44, y: 124}
+    newSize: {x: 44.017574, y: 123.99999}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4215474, y: 5.4580097}
+  m_EdgeRadius: 0
 --- !u!114 &2055373739 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 324050987050534289, guid: 836fb15c8be4e0745a39e7f7339879ea,
@@ -1968,6 +2433,162 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dfe85b3fcad9ea4dbecd46922478437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2128219904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2128219905}
+  - component: {fileID: 2128219907}
+  - component: {fileID: 2128219906}
+  m_Layer: 0
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2128219905
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128219904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 66398651}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2.4, y: -0.00000095367}
+  m_SizeDelta: {x: 801, y: 82}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2128219906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128219904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "O vislumbre de uma mulher surge em sua cabe\xE7a."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 73135053f23595a42a9150adeceef128, type: 2}
+  m_sharedMaterial: {fileID: 802341253161816769, guid: 73135053f23595a42a9150adeceef128,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 1
+  m_colorMode: 2
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 0.6650944, g: 0.6861523, b: 1, a: 1}
+    bottomRight: {r: 0.6650944, g: 0.6861523, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 33.95
+  m_fontSizeBase: 33.95
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_textAlignment: 514
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_textInfo:
+    textComponent: {fileID: 2128219906}
+    characterCount: 46
+    spriteCount: 0
+    spaceCount: 8
+    wordCount: 9
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 1
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2128219907
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128219904}
+  m_CullTransparentMesh: 0
 --- !u!1001 &584654245201123772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2097,7 +2718,7 @@ PrefabInstance:
     - target: {fileID: 708223286242674192, guid: 7c4a771bafb54a641b45650fc9e2f70d,
         type: 3}
       propertyPath: dialogoLinhas.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 708223286242674192, guid: 7c4a771bafb54a641b45650fc9e2f70d,
         type: 3}
@@ -2107,12 +2728,12 @@ PrefabInstance:
     - target: {fileID: 708223286242674192, guid: 7c4a771bafb54a641b45650fc9e2f70d,
         type: 3}
       propertyPath: dialogoLinhas.Array.data[1]
-      value: "Aperte R para abrir o invent\xE1rio."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 708223286242674192, guid: 7c4a771bafb54a641b45650fc9e2f70d,
         type: 3}
       propertyPath: dialogoLinhas.Array.data[2]
-      value: "Clique no item no invent\xE1rio para us\xE1-lo."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 708223286242674192, guid: 7c4a771bafb54a641b45650fc9e2f70d,
         type: 3}
@@ -2132,7 +2753,7 @@ PrefabInstance:
     - target: {fileID: 708223286242674193, guid: 7c4a771bafb54a641b45650fc9e2f70d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.2
+      value: -29.6
       objectReference: {fileID: 0}
     - target: {fileID: 708223286242674193, guid: 7c4a771bafb54a641b45650fc9e2f70d,
         type: 3}

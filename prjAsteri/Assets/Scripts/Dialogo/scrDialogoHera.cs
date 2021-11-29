@@ -11,7 +11,7 @@ public class scrDialogoHera : MonoBehaviour
     [SerializeField] scrControladorDialogo txtDialogo, txtNome, imgHera, imgMorpheus; 
     [SerializeField] bool emContato = false; 
 
-    public int LinhaFinal = 32;
+    public int LinhaFinal = 26;
 
 
     
@@ -34,7 +34,7 @@ public class scrDialogoHera : MonoBehaviour
                 txtDialogo.MostrarDialogo();
             }
 
-            if (txtDialogo.linhaAtual == 2 || txtDialogo.linhaAtual == 4 || txtDialogo.linhaAtual == 7 || txtDialogo.linhaAtual == 11 || txtDialogo.linhaAtual == 21 || txtDialogo.linhaAtual == 26)
+            if (txtDialogo.linhaAtual == 2 || txtDialogo.linhaAtual == 4 || txtDialogo.linhaAtual == 7 || txtDialogo.linhaAtual == 11 || txtDialogo.linhaAtual == 17 || txtDialogo.linhaAtual == 22)
         {
             //Falas Morpheus
 

@@ -80,8 +80,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6270670592919985191}
   - component: {fileID: 6270670592919985188}
-  - component: {fileID: 6270670592919985189}
   - component: {fileID: 6270670592919985178}
+  - component: {fileID: 1321574330}
   m_Layer: 0
   m_Name: "Relat\xF3rio de Viagem"
   m_TagString: Untagged
@@ -154,36 +154,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6270670592919985189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6270670592919985179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22c7abfaf1930d446ad6fc6dc0de01fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogoLinhas:
-  - "J\xE1 sa\xEDmos da \xF3rbita terrestre. A decolagem foi um sucesso!"
-  - "Est\xE3o todos bem e parece ter dado tudo certo."
-  - "Pelos meus c\xE1lculos a viagem at\xE9 Proxima Centauri B demoraria 10 anos terrestres."
-  - "Mas identificamos uma fenda temporal que poder\xE1 nos levar mais r\xE1pido encurtando
-    \r\neste espa\xE7o de tempo em 5 anos."
-  - "B\xE1rbara est\xE1 fazendo sua pesquisa no laborat\xF3rio e Lucius est\xE1 mexendo
-    no sistema da Hera."
-  - Tom parece meio preocupado com Helena.
-  - Ela realmente precisa descansar um pouco.
-  - "Meu robozinho Blobls tem sido uma \xF3tima companhia tamb\xE9m, al\xE9m de muito
-    \xFAtil me auxiliando no estudo do espa\xE7o."
-  - Espero que tudo ocorra bem.
-  nome: "Relat\xF3rio de Viagem 1"
-  txtDialogo: {fileID: 0}
-  txtNome: {fileID: 0}
-  imgMorpheus: {fileID: 0}
-  emContato: 0
 --- !u!61 &6270670592919985178
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -210,3 +180,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.52668, y: 2.7146149}
   m_EdgeRadius: 0
+--- !u!114 &1321574330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6270670592919985179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f528f1ad75d80414da7f1c28d4e6c8fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogoLinhas:
+  - "A fenda temporal nos levou na dire\xE7\xE3o certa, encurtando alguns anos terrestres
+    de diferen\xE7a."
+  - Entramos em uma zona perigosa e tivemos que desviar de uma chuva de meteoritos
+    no caminho.
+  - Um dos reatores foi atingido.
+  - "Tom desceu para a sala de m\xE1quinas junto com o seu asssitente e conseguiu
+    resolver o problema."
+  - O barulho do impacto me lembrou da guerra
+  - "A situa\xE7\xE3o na Terra est\xE1 ca\xF3tica. Malditos americanos."
+  - A qualquer momento uma bomba pode ser disparada de qualquer lado.
+  - "N\xE3o gosto de pensar nisso por muito tempo."
+  nome: "Relat\xF3rio de Viagem 2"
+  txtDialogo: {fileID: 0}
+  txtNome: {fileID: 0}
+  emContato: 0
+  relatorio: {fileID: 0}
+  Manager: {fileID: 0}

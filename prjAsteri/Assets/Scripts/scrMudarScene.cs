@@ -47,9 +47,10 @@ public class scrMudarScene : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //FindObjectOfType<scrAudio>().Play("Porta");
         if (other.CompareTag("Player") && !other.isTrigger)
         {
-            playerValor.GetComponentInChildren<scrAudio>().Play("Porta");
+            //playerValor.GetComponentInChildren<scrAudio>().Play("Porta");
             trigger=true;
             SceneManager.LoadScene("Loading");
             playerValor.transform.position = new Vector3(playerPosition.x,playerPosition.y,0f);

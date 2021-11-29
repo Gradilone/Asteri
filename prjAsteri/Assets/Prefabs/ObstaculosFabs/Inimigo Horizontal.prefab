@@ -54,8 +54,8 @@ MonoBehaviour:
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
-  m_PointLightInnerAngle: 27.64
-  m_PointLightOuterAngle: 67.17
+  m_PointLightInnerAngle: 24.38
+  m_PointLightOuterAngle: 48.46
   m_PointLightInnerRadius: 0.9072377
   m_PointLightOuterRadius: 8.123488
   m_PointLightDistance: 3
@@ -85,6 +85,7 @@ GameObject:
   - component: {fileID: 389054453922815230}
   - component: {fileID: 389054453922815201}
   - component: {fileID: 389054453922815227}
+  - component: {fileID: 531511429}
   m_Layer: 0
   m_Name: Inimigo Horizontal
   m_TagString: Inimigo1
@@ -262,9 +263,28 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: -0.24802732, y: 3.9098773}
-  - {x: -6.0399885, y: 0.8047043}
-  - {x: -6.070322, y: 7.1949224}
+  - {x: -6.716085, y: 1.2758695}
+  - {x: -6.713561, y: 6.4519854}
   - {x: -0.30198383, y: 4.0413733}
+--- !u!95 &531511429
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389054453922815202}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1724632fcc70ca24ea29a4134ed3aebd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4350509828258755604
 GameObject:
   m_ObjectHideFlags: 0

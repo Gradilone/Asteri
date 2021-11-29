@@ -7,6 +7,7 @@ public class scrRecompensa : MonoBehaviour
 
     private Inventario inventario;
     public GameObject bntItem;
+    public scrItemManager Manager;
     
     [TextArea(3, 10)]
     public string[] dialogoLinhas;
@@ -22,6 +23,12 @@ public class scrRecompensa : MonoBehaviour
     void Start() 
     {
         inventario = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventario>();
+        Manager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<scrItemManager>();
+
+        if (Manager.CompareName("bntOuro"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Update() 
@@ -49,6 +56,7 @@ public class scrRecompensa : MonoBehaviour
                     inventario.taCheio[i] = true;
                     FindObjectOfType<scrAudio>().Play("Item");
                     Instantiate(bntItem, inventario.slots[i].transform, false);
+                    Manager.itensInv.Add("fioRobo");
                     Destroy(gameObject);
                     break;
                     

@@ -21,6 +21,8 @@ TagManager:
   - Dialogo
   - ItemManager
   - Item
+  - Gaveta
+  - Mesa
   layers:
   - Default
   - TransparentFX

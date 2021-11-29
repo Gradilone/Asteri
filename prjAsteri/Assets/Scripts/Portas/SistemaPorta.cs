@@ -28,6 +28,25 @@ public class SistemaPorta : MonoBehaviour
 
     public static bool Bronze = false;
 
+    public static bool ClicouOuroGaveta = false;
+
+    public static bool NaoOuroGaveta = false;
+
+    //public static bool ClicouOuroMesa = false;
+
+    //public static bool NaoOuroMesa = false;
+
+    public static bool ClicouPrata = false;
+
+    public static bool NaoPrata = false;
+
+    public static bool ClicouOuro = false;
+
+    public static bool NaoOuro = false;
+
+
+
+
     public scrItemManager Manager;
 
     private scrControladorDialogo dialogo;
@@ -58,7 +77,7 @@ public class SistemaPorta : MonoBehaviour
             Debug.Log("Abriu");
             FindObjectOfType<scrAudio>().Play("Porta"); 
             DialogoAbriu = true;
-            Destroy(gameObject);
+            Destroy(gameObject); 
         }
     }
 
@@ -105,7 +124,6 @@ public class SistemaPorta : MonoBehaviour
         {
             Ouro = true;
             Destroy(gameObject);
-            
         }
     }
 
@@ -116,6 +134,7 @@ public class SistemaPorta : MonoBehaviour
             Prata = true;
             Destroy(gameObject);
         }
+        
     }
 
     public void Usarbronze()
@@ -124,6 +143,28 @@ public class SistemaPorta : MonoBehaviour
         {
             Bronze = true;
             Destroy(gameObject);
+        }
+    }
+
+    public void ErrouOuro()
+    {
+        if (ClicouOuro)
+        {
+            NaoOuro = true;
+        }
+
+        if (ClicouOuroGaveta)
+        {
+            NaoOuroGaveta = true;
+        }
+        
+    }
+
+    public void ErrouPrata()
+    {
+        if (ClicouPrata)
+        {
+            NaoPrata = true;
         }
     }
 }
