@@ -51,19 +51,7 @@ public class scrRecoRobo : MonoBehaviour
                 
             }
 
-                for (int i = 0; i < inventario.slots.Length; i++)
-            {
-                if (inventario.taCheio[i] == false)
-                {
-                    inventario.taCheio[i] = true;
-                    FindObjectOfType<scrAudio>().Play("Item");
-                    Instantiate(bntItem, inventario.slots[i].transform, false);
-                    Manager.itensInv.Add("fioRobo");
-                    Destroy(gameObject);
-                    break;
-                    
-                }
-            }
+            Manager.AddItemToInv(gameObject,bntItem);
             
         }
     

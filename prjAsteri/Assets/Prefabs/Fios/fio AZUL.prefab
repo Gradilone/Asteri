@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 8494594376953884719}
   m_Layer: 0
   m_Name: fio AZUL
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,4 +192,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bntItem: {fileID: 7359376225435856110, guid: f160104bafa019e48afed6e8997b5baa, type: 3}
+  Manager: {fileID: 0}
   emContato: 0

@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -792,12 +792,12 @@ PrefabInstance:
     - target: {fileID: 895546902080018102, guid: f5504237344dcfd41b2a184448259759,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.52
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 895546902080018102, guid: f5504237344dcfd41b2a184448259759,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -27.03
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 895546902080018102, guid: f5504237344dcfd41b2a184448259759,
         type: 3}
@@ -1499,7 +1499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 549562981, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}
       propertyPath: playerPosition.y
-      value: -30.9
+      value: -33
       objectReference: {fileID: 0}
     - target: {fileID: 3151622003918827844, guid: f57154eaf73a6004080e71aac6296e9f,
         type: 3}
@@ -1579,7 +1579,7 @@ PrefabInstance:
     - target: {fileID: 3151622003918827846, guid: f57154eaf73a6004080e71aac6296e9f,
         type: 3}
       propertyPath: m_Name
-      value: PortaDanger2
+      value: PortaDanger3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f57154eaf73a6004080e71aac6296e9f, type: 3}

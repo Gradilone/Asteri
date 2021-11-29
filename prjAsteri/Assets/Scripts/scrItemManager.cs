@@ -18,8 +18,12 @@ public class scrItemManager : MonoBehaviour
 
     public bool FioVerde=false;
 
+    private Inventario inventario;
+
     private void Awake()
     {
+        inventario = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventario>();
+
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -50,5 +54,21 @@ public class scrItemManager : MonoBehaviour
         {
             return false;
         }
+    }
+
+    public void AddItemToInv(GameObject presente, GameObject btnPresente)
+    {
+        for (int i = 0; i < inventario.slots.Length; i++)
+            {
+                if (inventario.taCheio[i] == false)
+                {
+                    inventario.taCheio[i] = true;
+                    FindObjectOfType<scrAudio>().Play("Item");
+                    Instantiate(btnPresente, inventario.slots[i].transform, false);
+                    itensInv.Add(presente.name);
+                    Destroy(presente);  
+                    break;
+                }
+            }
     }
 }

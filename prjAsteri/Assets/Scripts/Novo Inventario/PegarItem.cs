@@ -27,19 +27,7 @@ public class PegarItem : MonoBehaviour
     {
         if (emContato && Input.GetKeyDown(KeyCode.E))
         {
-            FindObjectOfType<scrAudio>().Play("Item");
-            Debug.Log("Item Pego");
-            for (int i = 0; i < inventario.slots.Length; i++)
-            {
-                if (inventario.taCheio[i] == false)
-                {
-                    inventario.taCheio[i] = true;
-                    Instantiate(bntItem, inventario.slots[i].transform, false);
-                    Manager.itensInv.Add(nome);
-                    Destroy(gameObject);  
-                    break;
-                }
-            }
+            Manager.AddItemToInv(gameObject,bntItem);
             
         }
         
@@ -62,4 +50,6 @@ public class PegarItem : MonoBehaviour
             
         }
     }
+
+
 }

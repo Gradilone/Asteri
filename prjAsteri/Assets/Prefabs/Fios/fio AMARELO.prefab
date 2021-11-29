@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 2613844075103247707}
   m_Layer: 0
   m_Name: fio AMARELO
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,4 +192,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bntItem: {fileID: 9039547555232839240, guid: 316c373d335fed8438128cedd9880dc4, type: 3}
+  Manager: {fileID: 0}
   emContato: 0

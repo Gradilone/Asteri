@@ -58,13 +58,6 @@ public class SistemaPorta : MonoBehaviour
         Manager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<scrItemManager>();
 
         dialogo = GetComponent<scrControladorDialogo>();
-
-        isOpen=Manager.portaAbriu;
-
-        if (isOpen)
-        {
-            Destroy(gameObject);
-        }
         
     }
 

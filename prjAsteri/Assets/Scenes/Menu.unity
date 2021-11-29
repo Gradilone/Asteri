@@ -1274,7 +1274,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Artista Principal: Luca do Nascimento Gil Perez \nArtista Second\xE1rio:
+  m_text: "Artista Principal: Luca do Nascimento Gil Perez \nArtista Secund\xE1rio:
     Miguel Ant\xF4nio Monteiro da Costa\nProgama\xE7\xE3o e Narrativa: Lucas Gradilone
     Valias\nSons: Ricardo Gil dos Santos\nParticipa\xE7\xE3o: Murillo Correia Santos.\n"
   m_isRightToLeft: 0

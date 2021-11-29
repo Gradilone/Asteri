@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 8614383925596535174}
   m_Layer: 0
   m_Name: fio VERDE
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,4 +192,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bntItem: {fileID: 9051061540344163938, guid: b663987dfcc704e4c8150581b791076c, type: 3}
+  Manager: {fileID: 0}
   emContato: 0
