@@ -305,9 +305,20 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 517244929}
   m_CullTransparentMesh: 0
 --- !u!1 &550195382
+=======
+  m_GameObject: {fileID: 1113881284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcdaa0ae74822549a6e96e6428e4212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cenaDesejada: Cutscene
+--- !u!1 &1162298662
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
